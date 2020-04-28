@@ -7,11 +7,13 @@ This is the CSS for the Home Page (index.html)
 html{
 
     background: rgb(24, 153, 52);
-    font-family: "Ariel";
+    font-family: "Times New Roman", Times, serif;
 }
 
 body{
-
+    
+    margin: 10;
     background-color: green;
+    font-family: "Arial", Helvetica, sans-serif;
 }
 
