@@ -18,8 +18,21 @@ body{
 }
 
 
-nav{
+nav ul{
 
-  background-color:rgb(99, 7, 204)
-    
+  background-color:rgb(99, 7, 204);
+  list-style:none;
+
+  display: inline-block;
+  margin: 50 px;
+
+
+}
+
+
+
+
+
+h1{
+    color:rgb(80, 80, 80)
 }
