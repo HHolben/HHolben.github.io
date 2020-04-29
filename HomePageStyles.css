@@ -17,6 +17,11 @@ body{
     font-family: "Arial", Helvetica, sans-serif;
 }
 
+nav{
+
+    float:center;
+}
+
 
 nav ul{
 
@@ -32,7 +37,7 @@ nav ul{
 nav li{
     color:white;
     display: inline-block;
-    margin: 50 px;
+    margin-left: 50px;
 
 }
 
