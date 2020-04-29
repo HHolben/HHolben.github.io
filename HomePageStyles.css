@@ -23,13 +23,18 @@ nav ul{
   background-color:rgb(99, 7, 204);
   list-style:none;
 
-  display: inline-block;
-  margin: 50 px;
+
 
 
 }
 
 
+nav li{
+    color:white;
+    display: inline-block;
+    margin: 50 px;
+
+}
 
 
 
