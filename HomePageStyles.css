@@ -55,21 +55,25 @@ nav li{
     
 
 }
+ul li a{
 
-nav li:hover{
-    text-shadow:rgb(238, 255, 0);
+    text-decoration: none;
+    color: red;
+}
+
+ul li a:hover{
+    text-shadow:rgb(247, 98, 12);
     text-decoration:none;
 }
 
 
-nav li:visited{
+ul li a:visited{
 
     color:pink;
     text-decoration:none;
 
 
 }
-
 
 
 
