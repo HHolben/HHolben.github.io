@@ -22,10 +22,6 @@ nav {
     float:center;
 }
 
-nav:hover{
-    text-shadow:rgb(238, 255, 0);
-}
-
 nav ul{
 
   background-color:rgb(99, 7, 204);
@@ -34,7 +30,11 @@ nav ul{
 
 
 
+
+
 }
+
+
 
 
 nav li{
@@ -45,11 +45,27 @@ nav li{
     text-decoration:none; /*This should set the hyperlinks to no underline*/
 
     text-shadow: rgb(80, 80, 80);
-    
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+
     
 
 }
 
+nav:hover{
+    text-shadow:rgb(238, 255, 0);
+}
+
+
+nav:visited{
+
+    color:yellow;
+
+
+}
 
 
 
