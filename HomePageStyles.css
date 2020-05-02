@@ -59,6 +59,7 @@ ul li a{
 
     text-decoration: none;
     color: red;
+    text-shadow: blue;
 }
 
 ul li a:hover{
@@ -69,8 +70,9 @@ ul li a:hover{
 
 ul li a:visited{
 
-    color:pink;
+    color:red;
     text-decoration:none;
+    text-shadow: blueviolet;
 
 
 }
