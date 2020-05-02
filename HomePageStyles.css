@@ -17,16 +17,16 @@ body{
     font-family: "Arial", Helvetica, sans-serif;
 }
 
-nav a{
+nav {
 
     float:center;
 }
 
-nav a:hover{
+nav:hover{
     text-shadow:rgb(238, 255, 0);
 }
 
-nav a ul{
+nav ul{
 
   background-color:rgb(99, 7, 204);
   list-style:none;
@@ -37,7 +37,7 @@ nav a ul{
 }
 
 
-nav a li{
+nav li{
     color:red;
     font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
     display: inline-block;
