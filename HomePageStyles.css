@@ -56,15 +56,15 @@ nav li{
 
 }
 
-nav:hover{
+nav li:hover{
     text-shadow:rgb(238, 255, 0);
     text-decoration:none;
 }
 
 
-nav:visited{
+nav li:visited{
 
-    color:yellow;
+    color:pink;
     text-decoration:none;
 
 
