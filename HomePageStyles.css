@@ -26,6 +26,7 @@ nav ul{
 
   background-color:rgb(99, 7, 204);
   list-style:none;
+  text-decoration:none;
 
 
 
@@ -43,8 +44,8 @@ nav li{
     display: inline-block;
     margin-left: 50px;
     text-decoration:none; /*This should set the hyperlinks to no underline*/
-
-    text-shadow: rgb(80, 80, 80);
+    text-shadow:red;
+   /* text-shadow: rgb(80, 80, 80);*/
 
     padding-top: 20px;
     padding-right: 20px;
@@ -57,12 +58,14 @@ nav li{
 
 nav:hover{
     text-shadow:rgb(238, 255, 0);
+    text-decoration:none;
 }
 
 
 nav:visited{
 
     color:yellow;
+    text-decoration:none;
 
 
 }
