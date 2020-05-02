@@ -1,0 +1,66 @@
+/*
+
+This is the CSS for the nav elements in my website
+
+*/
+
+
+nav {
+
+    float:center;
+}
+
+nav ul{
+
+  background-color:rgb(99, 7, 204);
+  list-style:none;
+  text-decoration:none;
+
+
+
+
+
+
+}
+
+
+
+
+nav li{
+    color:red;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration:none; /*This should set the hyperlinks to no underline*/
+    text-shadow:red;
+   /* text-shadow: rgb(80, 80, 80);*/
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+
+    
+
+}
+ul li a{
+
+    text-decoration: none;
+    color: red;
+    text-shadow: blue;
+}
+
+ul li a:hover{
+    text-shadow:rgb(247, 98, 12);
+    text-decoration:none;
+}
+
+
+ul li a:visited{
+
+    color:red;
+    text-decoration:none;
+    text-shadow: blueviolet;
+
+
+}
