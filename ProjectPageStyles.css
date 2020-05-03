@@ -1,0 +1,44 @@
+/*
+
+This is the CSS for the nav elements on the project page
+*/
+
+
+nav b ul{
+
+  background-color:rgb(7, 204, 171);
+  list-style:none;
+  text-decoration:none;
+
+
+
+
+
+
+}
+
+
+
+
+
+ul li b{
+
+    text-decoration: none;
+    color: red;
+    text-shadow: blue;
+}
+
+ul li b:hover{
+    text-shadow:rgb(247, 98, 12);
+    text-decoration:none;
+}
+
+
+ul li b:visited{
+
+    color:red;
+    text-decoration:none;
+    text-shadow: blueviolet;
+
+
+}
