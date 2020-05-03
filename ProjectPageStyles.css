@@ -3,6 +3,13 @@
 This is the CSS for the nav elements on the project page
 */
 
+body{
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow:row wrap;
+    flex-flow: row wrap;
+}
 
 nav b ul{
 
