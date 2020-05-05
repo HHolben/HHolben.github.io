@@ -11,37 +11,28 @@ body{
     flex-flow: row wrap;
 }
 
-nav b ul{
+.ProjectLinks{
 
   background-color:rgb(7, 204, 171);
   list-style:none;
   text-decoration:none;
 
-
-
-
-
-
 }
 
-
-
-
-
-ul li b{
+.ProjectLinks ul li a{
 
     text-decoration: none;
     color: red;
     text-shadow: blue;
 }
 
-ul li b:hover{
+.ProjectLinks ul li a:hover{
     text-shadow:rgb(247, 98, 12);
     text-decoration:none;
 }
 
 
-ul li b:visited{
+.ProjectLinks ul li a:visited{
 
     color:red;
     text-decoration:none;
@@ -49,3 +40,5 @@ ul li b:visited{
 
 
 }
+
+
