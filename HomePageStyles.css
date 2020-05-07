@@ -35,11 +35,21 @@ aside{
 
 width: 10%;
 padding: 10px;
-position: right;
 
 
 }
 
+
+
 .PhotoOfMe{
 transform: rotate(-90deg);
+}
+
+article{
+    width:50%
+    
+}
+
+p{
+    padding-right: 10px;
 }
