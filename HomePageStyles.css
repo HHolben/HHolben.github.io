@@ -30,6 +30,16 @@ h1{
     color:rgb(71, 138, 9)
 }
 
+
+aside{
+
+width: 33.33%;
+padding: 10px;
+float: right;
+
+
+}
+
 .PhotoOfMe{
 transform: rotate(-90deg);
 }
