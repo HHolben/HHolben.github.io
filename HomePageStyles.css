@@ -29,3 +29,7 @@ section{
 h1{
     color:rgb(71, 138, 9)
 }
+
+.PhotoOfMe{
+transform: rotate(-90deg);
+}
