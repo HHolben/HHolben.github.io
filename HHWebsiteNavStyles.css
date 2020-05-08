@@ -12,7 +12,7 @@ nav {
 
 nav ul{
 
-  background-image: linear-gradient(to top,rgb(0,0,0),rgb(99, 7, 204));
+  background-image: linear-gradient(to bottom,rgb(0,0,0),rgb(99, 7, 204));
   list-style:none;
   text-decoration:none;
 
@@ -48,12 +48,12 @@ ul li a{
 
     text-decoration: none;
     color: yellow;
-    text-shadow:red;
+   
 }
 
 ul li a:hover{
-    text-shadow:rgb(247, 98, 12);
-    color: rgb(247, 98, 12);
+    text-shadow:0px 0px 5px rgb(247, 98, 12);
+
     font-size: 155%;
     text-decoration:none;
 }
