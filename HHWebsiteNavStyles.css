@@ -48,22 +48,21 @@ ul li a{
 
     text-decoration: none;
     color: yellow;
-    text-shadow: blue;
+    text-shadow:red;
 }
 
 ul li a:hover{
     text-shadow:rgb(247, 98, 12);
     color: rgb(247, 98, 12);
-    font-size: 155%
+    font-size: 155%;
     text-decoration:none;
 }
 
 
 ul li a:visited{
 
-    color:red;
+    color: yellow;
     text-decoration:none;
-    text-shadow: blueviolet;
-
+    text-shadow:red;
 
 }
