@@ -12,7 +12,7 @@ nav {
 
 nav ul{
 
-  background-color:rgb(99, 7, 204);
+  background-image: linear-gradient(to top,rgb(0,0,0),rgb(99, 7, 204));
   list-style:none;
   text-decoration:none;
 
