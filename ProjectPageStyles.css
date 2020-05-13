@@ -48,7 +48,7 @@ Ok, now I've got to get a grid layout
 .grid-container{
     display:grid;
     /*the following rule defines the number of columns in the card grid*/
-    grid-template-columns:auto, auto, auto; 
+    grid-template-columns: 100px, 100px, 100px; 
 
 
 
