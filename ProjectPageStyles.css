@@ -47,10 +47,46 @@ Ok, now I've got to get a grid layout
 .grid-item{
     background-color: rgb(105, 179, 179, 0.9);
     border: 1px solid rgb(0, 0, 0);
+    grid-gap: 10px;
     padding: 10px;
     text-align: center;
 
 }
+
+
+.card{
+
+    box-shadow: 0 10px 10px 0 rgb(99, 7, 204);
+    transition: 0.3s;
+    padding: 1px 8px;
+}
+
+.card:hover{
+    box-shadow: 0 20px 20px 0 rgb(99, 7, 204);
+    color: rgb(247, 98, 12);
+    padding: 1px 8px;
+}
+
+
+.grid-container{
+    display:grid;
+    /*the following rule defines the number of columns in the card grid*/
+    grid-template-columns:auto, auto, auto; 
+
+
+
+}
+
+
+
+
+
+.ProjectLinks
+{
+background-image: radial-gradient(rgb(143, 143, 143),rgb(214, 214, 214)) ;
+}
+
+
 
 
 
