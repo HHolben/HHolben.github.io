@@ -64,7 +64,7 @@ ul li a:hover{
 
 ul li a:visited{
 
-    color: yellow;
+    color: rgb(0,255,0);
     text-decoration:none;
     text-shadow:red;
 
