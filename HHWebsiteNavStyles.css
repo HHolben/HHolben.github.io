@@ -18,7 +18,10 @@ This is the CSS for the nav elements in my website
 }
 
 
-
+.ProjectLinks
+{
+background-image: radial-gradient(rgb(143, 143, 143),rgb(214, 214, 214)) ;
+}
 
 
 

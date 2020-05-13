@@ -13,7 +13,7 @@ body{
     -webkit-flex-flow:row wrap;
     flex-flow: row wrap;
     */
-    background-image: radial-gradient(rgb(175, 175, 175),rgb(255, 255, 255);
+    background-image: radial-gradient(rgb(175, 175, 175),rgb(255, 255, 255));
     font-family: "Arial", Helvetica, sans-serif;
 }
 
@@ -36,8 +36,23 @@ h2{
     box-shadow: 0 5px 10px 0 rgb(99, 7, 204);
     transition: 0.3s;
     padding: 1px 8px;
-    width: 30%
+    width: 30%;
+    text-align: center;
 }
+
+/**
+Ok, now I've got to get a grid layout 
+
+**/
+.grid-item{
+    background-color: rgb(105, 179, 179, 0.9);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+
+}
+
+
 
 
 /**
