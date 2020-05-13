@@ -6,10 +6,20 @@ This is the CSS for the nav elements in my website
 
 .card{
 
-    box-shadow: 0 5px 10px 0 rgb(99, 7, 204);
+    box-shadow: 0 10px 10px 0 rgb(99, 7, 204);
     transition: 0.3s;
     padding: 1px 8px;
 }
+
+.card:hover{
+    box-shadow: 0 20px 20px 0 rgb(99, 7, 204);
+    color: rgb(247, 98, 12);
+    padding: 1px 8px;
+}
+
+
+
+
 
 
 
