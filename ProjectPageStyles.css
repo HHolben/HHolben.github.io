@@ -22,7 +22,7 @@ body{
     display:grid;
     /*the following rule defines the number of columns in the card grid*/
     
-    grid-template-columns: 100px, 100px, 100px;
+    grid-template-columns: 200px, 100px, 300px;
     grid-gap: 20px; 
 
 
