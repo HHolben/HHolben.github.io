@@ -23,7 +23,7 @@ body{
     /*the following rule defines the number of columns in the card grid*/
     
     grid-template-columns: auto, auto, auto, auto;
-    grid-template-rows: auto, auto, auto, auto;
+
     grid-gap: 20px; 
 
 
