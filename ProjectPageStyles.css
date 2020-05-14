@@ -17,6 +17,26 @@ body{
     font-family: "Arial", Helvetica, sans-serif;
 }
 
+
+.grid-container{
+    display:grid;
+    /*the following rule defines the number of columns in the card grid*/
+    
+    grid-template-columns: 100px, 100px, 100px;
+    grid-gap: 20px; 
+
+
+
+}
+
+.grid-item{
+    background-color: rgb(105, 179, 179, 0.9);
+    border: 1px solid rgb(0, 0, 0);
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: center;
+
+
 h1{
     padding: 15px;
     text-decoration: underline;
@@ -45,21 +65,6 @@ Ok, now I've got to get a grid layout
 
 **/
 
-.grid-container{
-    display:grid;
-    /*the following rule defines the number of columns in the card grid*/
-    grid-template-columns: 100px, 100px, 100px; 
-
-
-
-}
-
-.grid-item{
-    background-color: rgb(105, 179, 179, 0.9);
-    border: 1px solid rgb(0, 0, 0);
-    grid-gap: 10px;
-    padding: 10px;
-    text-align: center;
 
 }
 
@@ -86,7 +91,7 @@ Ok, now I've got to get a grid layout
 
 .ProjectLinks
 {
-background-image: radial-gradient(rgb(143, 143, 143),rgb(214, 214, 214)) ;
+background-image: radial-gradient(rgb(236, 236, 236),rgb(255, 255, 255)) ;
 }
 
 
