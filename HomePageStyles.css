@@ -44,6 +44,9 @@ padding: 15px;
 
 .PhotoOfMe{
 transform: rotate(-90deg);
+max-width: 100%;
+max-height: 100%;
+display:block;
 }
 
 article{
@@ -57,12 +60,12 @@ p{
 
 .column{
     float: left;
-    width: 33.3333333333333333%;
+    width: 50%;
     padding: 10px;
 }
 
 .row{
-    height: 33.3333333333333333%;
+    height: 100%;
 }
 .row:after {
     content: "";
