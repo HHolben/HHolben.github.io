@@ -79,9 +79,9 @@ p{
 
 
 .PhotoOfMe{
-    transform: rotate(-90deg);
-    max-width: 20%;
-    max-height: 20%;
+    
+    max-width: 100px;
+   
     display:block;
     object-fit:contain;
     }
