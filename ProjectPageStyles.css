@@ -74,7 +74,7 @@ Ok, now I've got to get a grid layout
 
 
 .card:hover{
-    box-shadow: 0 20px 20px 0 rgb(99, 7, 204);
+    box-shadow: 0 20px 20px 0 rgb(0, 255, 0);
     color: rgb(247, 98, 12);
     padding: 1px 8px;
 }
