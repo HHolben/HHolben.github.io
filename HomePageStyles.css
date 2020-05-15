@@ -42,12 +42,6 @@ padding: 15px;
 
 
 
-.PhotoOfMe{
-transform: rotate(-90deg);
-max-width: 50%;
-max-height: 50%;
-display:block;
-}
 
 article{
     width:100%
@@ -75,9 +69,19 @@ p{
 }
 .card{
     box-shadow: 0 5px 10px 0 rgb(99, 7, 204);
+    
     transition: 0.3s;
     padding: 10px;
     width: 100%;
     height: 100%;
     text-align: center;
 }
+
+
+.PhotoOfMe{
+    transform: rotate(-90deg);
+    max-width: 20%;
+    max-height: 20%;
+    display:block;
+    object-fit:scale-down;
+    }
