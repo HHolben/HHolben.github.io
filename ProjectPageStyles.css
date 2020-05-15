@@ -41,7 +41,7 @@ h2{
 .column{
     float: left;
     width: 25%;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .row:after {
@@ -54,8 +54,8 @@ h2{
 .card{
     box-shadow: 0 5px 10px 0 rgb(99, 7, 204);
     transition: 0.3s;
-    padding: 1px 8px;
-    width: 30%;
+    padding: 10px;
+    width: 100%;
     text-align: center;
 }
 
@@ -68,12 +68,6 @@ Ok, now I've got to get a grid layout
 
 
 
-.card{
-
-    box-shadow: 0 10px 10px 0 rgb(99, 7, 204);
-    transition: 0.3s;
-    padding: 1px 8px;
-}
 
 .card:hover{
     box-shadow: 0 20px 20px 0 rgb(99, 7, 204);
