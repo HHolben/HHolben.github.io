@@ -44,6 +44,9 @@ h2{
     padding: 10px;
 }
 
+.row{
+    height: 33.3333333333333333%;
+}
 .row:after {
     content: "";
     display: table;
