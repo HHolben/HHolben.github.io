@@ -83,5 +83,5 @@ p{
     max-width: 20%;
     max-height: 20%;
     display:block;
-    object-fit:scale-down;
+    object-fit:contain;
     }
