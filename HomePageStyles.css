@@ -31,6 +31,7 @@ h1{
 }
 
 
+
 aside{
 
 float:right;
@@ -47,6 +48,11 @@ article{
     width:100%
     
 }
+
+div.paragraph1{
+    text-indent:50px;
+}
+
 
 p{
     padding-right: 10px;
