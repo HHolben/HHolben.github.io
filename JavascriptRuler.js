@@ -1,5 +1,4 @@
-
-object.onload =function MakeStuffHappen(){
+function MakeStuffHappen(){
 document.getElementById("MakeStuffHappen").style.display='block';
 
 document.write("Hello, World!");
