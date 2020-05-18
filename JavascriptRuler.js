@@ -18,5 +18,5 @@ var SquareWidth=50;
 var InitialPos=2*SquareWidth;
 
 c.fillRect(InitialPos, InitialPos, SquareWidth, SquareWidth);
-c.fillRect(InitialPos-InitialPos, InitialPos*2, 3*SquareWidth, SquareWidth);
-c.fillRect(InitialPos, InitialPos*3, SquareWidth, SquareWidth);
+c.fillRect(InitialPos*2, InitialPos*1.5, 3*SquareWidth, SquareWidth);
+c.fillRect(InitialPos, InitialPos*2, SquareWidth, SquareWidth);
