@@ -1,8 +1,17 @@
-function MakeStuffHappen(){
+/*function MakeStuffHappen(){
 document.getElementById("MakeStuffHappen").style.display='block';
 
 document.write("Hello, World!");
 print("Hello World!");
 fill(0,0,0);
 rect(50,50,50,50);
-}
+}\*/
+
+window.alert("Welcome to the party");
+   
+var canvas=document.querySelector("  Canvas");
+var ctx=canvas.getContext("2d");
+//ctx.beginPath();
+//ctx.rect(150, 150, 50, 50);
+ctx.fillStyle=rgb(0,0,255);
+ctx.fillRect(0, 0, 100, 100);
