@@ -14,7 +14,9 @@ var c=canvas.getContext("2d");
 //ctx.beginPath();
 //ctx.rect(150, 150, 50, 50);
 //ctx.fillStyle=rgb(0,0,255);
-c.fillRect(100, 100, 100, 100);
+var SquareWidth=50;
+var InitialPos=2*SquareWidth;
 
-
- 
+c.fillRect(InitialPos, InitialPos, SquareWidth, SquareWidth);
+c.fillRect(InitialPos-InitialPos, InitialPos*2, 3*SquareWidth, SquareWidth);
+c.fillRect(InitialPos, InitialPos*3, SquareWidth, SquareWidth);
