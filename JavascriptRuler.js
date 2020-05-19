@@ -41,9 +41,9 @@ IOne=0;
 
 while(IOne<PlusPerRow)
 {
-var red=Math.floor(Math.random()*255);
-var blue=Math.floor(Math.random()*255);
-var blue=Math.floor(Math.random()*255);
+var Red=Math.floor(Math.random()*255);
+var Blue=Math.floor(Math.random()*255);
+var Green=Math.floor(Math.random()*255);
 
 c.fillStyle="rgb(red,green,blue)";
 c.fillRect(SpaceBetween*IOne+InitialPos, SpaceBetween*ITwo+InitialPos, SquareWidth, SquareWidth);
