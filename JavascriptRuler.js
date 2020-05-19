@@ -24,8 +24,16 @@ c.fillRect(InitialPos/2, InitialPos*1.5, 3*SquareWidth, SquareWidth);
 c.fillRect(InitialPos, InitialPos*2, SquareWidth, SquareWidth);
 
 var PlusPerRow=25;
+var PlusPerColumn=3*PlusPerRow;
 var IOne=1;
+var ITwo=1;
 var SpaceBetween=15*SquareWidth;
+
+while(ITwo<PlusPerColumn)
+{
+
+
+
 
 while(IOne<PlusPerRow)
 {
@@ -35,5 +43,8 @@ c.fillRect(SpaceBetween*IOne+InitialPos, InitialPos*2, SquareWidth, SquareWidth)
 
 
     IOne++;
+
+}
+ITwo++;
 
 }
