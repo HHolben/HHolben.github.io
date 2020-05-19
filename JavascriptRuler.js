@@ -25,8 +25,8 @@ c.fillRect(InitialPos, InitialPos*2, SquareWidth, SquareWidth);
 
 var PlusPerRow=25;
 var PlusPerColumn=3*PlusPerRow;
-var IOne=1;
-var ITwo=1;
+var IOne=0;
+var ITwo=0;
 var SpaceBetween=15*SquareWidth;
 
 var red=Math.floor(Math.random()*255);
@@ -35,7 +35,7 @@ var blue=Math.floor(Math.random()*255);
 
 while(ITwo<PlusPerColumn)
 {
-IOne=1;
+IOne=0;
 
 
 
