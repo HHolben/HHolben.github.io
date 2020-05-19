@@ -31,7 +31,7 @@ var SpaceBetween=15*SquareWidth;
 
 while(ITwo<PlusPerColumn)
 {
-
+IOne=1;
 
 
 
