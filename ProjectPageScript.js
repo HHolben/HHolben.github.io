@@ -5,9 +5,6 @@ var canvas=document.querySelector("Canvas");
 var c=canvas.getContext("2d");
 
 
-//can we resize the canvas to fit the window?
-canvas.width=window.innerWidth;
-
 var SquareWidth=3;
 var InitialPos=2*SquareWidth;
 
