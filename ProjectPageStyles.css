@@ -4,6 +4,7 @@ This is the CSS for the nav elements on the project page
 */
 html{
 
+
     background-color: rgb(24, 153, 52);
 }
 body{
@@ -23,13 +24,15 @@ body{
 *{box-sizing:border-box;
 }
 
-
+/*This is the styles for everything on the page*/
 .PlusCanvas{
     position:relative;
 }
 
-.ProjectLinks{
 
+/*This is the styles for the element containing the links and everything, which is inside the plus canvas element- wh*/
+.ProjectLinks{
+    background-color:transparent;
     position:absolute;
     left:0;
     top:0;
