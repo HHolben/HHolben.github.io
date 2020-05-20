@@ -1,4 +1,6 @@
 
+
+
 var canvas=document.querySelector("Canvas");
 var c=canvas.getContext("2d");
 
