@@ -27,16 +27,18 @@ body{
 /*This is the styles for everything on the page*/
 .PlusCanvas{
     position:relative;
+    top:0;
 }
 
 
-/*This is the styles for the element containing the links and everything, which is inside the plus canvas element- wh*/
+/*This is the styles for the element containing the links and everything, which is inside the plus canvas element-*/
 .ProjectLinks{
     background-color:transparent;
     position:absolute;
     left:0;
     top:0;
 }
+
 
 
 h1{
@@ -72,7 +74,7 @@ h2{
 .card{
     /*box-shadow: 0 0 10px 0 rgb(99, 7, 204);*/
     box-shadow: 0 0 10px 0 rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
     transition: 0.3s;
     padding: 10px;
     width: 100%;
@@ -111,47 +113,5 @@ h2:hover{
 
 
 
-.ProjectLinks
-{
-background-image: radial-gradient(rgb(236, 236, 236),rgb(255, 255, 255)) ;
-}
 
 
-
-
-
-
-/**
-.ProjectLinks{
-
-  background-color:rgb(214, 52, 182);
-  padding:15px;
-  list-style:none;
-  text-decoration:none;
-
-}
-
-.ProjectLinks ul li a{
-
-    text-decoration: none;
-    color: red;
-    text-shadow: blue;
-}
-
-.ProjectLinks ul li a:hover{
-    text-shadow:rgb(247, 98, 12);
-    text-decoration:none;
-}
-
-
-.ProjectLinks ul li a:visited{
-    
-    color:red;
-    text-decoration:none;
-    text-shadow: blueviolet;
-
-
-}
-
-
-**/

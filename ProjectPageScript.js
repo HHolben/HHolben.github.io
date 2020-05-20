@@ -17,7 +17,7 @@ c.fillRect(InitialPos, InitialPos, SquareWidth, SquareWidth);
 c.fillRect(InitialPos/2, InitialPos*1.5, 3*SquareWidth, SquareWidth);
 c.fillRect(InitialPos, InitialPos*2, SquareWidth, SquareWidth);
 
-var PlusPerRow=25;
+var PlusPerRow=22;
 var PlusPerColumn=3*PlusPerRow;
 var IOne=0;
 var ITwo=0;
