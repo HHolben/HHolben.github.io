@@ -1,5 +1,5 @@
 
-
+context=document.getElementById("canvas").getContext('2d');
 
 var canvas=document.querySelector("Canvas");
 var c=canvas.getContext("2d");
@@ -10,17 +10,14 @@ var InitialPos=2*SquareWidth;
 
 
 
-
-
-c.fillRect(InitialPos, InitialPos, SquareWidth, SquareWidth);
-c.fillRect(InitialPos/2, InitialPos*1.5, 3*SquareWidth, SquareWidth);
-c.fillRect(InitialPos, InitialPos*2, SquareWidth, SquareWidth);
-
 var PlusPerRow=22;
 var PlusPerColumn=3*PlusPerRow;
 var IOne=0;
 var ITwo=0;
 var SpaceBetween=15*SquareWidth;
+
+
+
 
 var Red=Math.floor(Math.random()*255);
 var Green=Math.floor(Math.random()*255);
@@ -31,6 +28,11 @@ while(ITwo<PlusPerColumn)
 {
 IOne=0;
 
+
+context.beginPath();
+context.setLineDash([10]);
+context.moveTo(InitialPos,InitialPos);
+context.lineTo(InitialPos,InitialPos*PlusPerColumn);
 
 
 while(IOne<PlusPerRow)
