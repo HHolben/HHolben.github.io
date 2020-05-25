@@ -98,8 +98,8 @@ Ok, now I've got to get a grid layout
     box-shadow: 0 0 30px 0 rgb(0, 255, 0);
     color: rgb(247, 98, 12);
     padding: 1px 8px;
-    height:105%;
-    width:105%;
+    height:100%;
+    width:100%;
 
     
 }
