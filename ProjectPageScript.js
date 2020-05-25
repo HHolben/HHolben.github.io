@@ -1,5 +1,5 @@
 
-context=document.getElementById("canvas").getContext("2d");
+context=document.getElementById("canvas");
 
 var canvas=document.querySelector("Canvas");
 var c=canvas.getContext("2d");
