@@ -29,10 +29,10 @@ while(ITwo<PlusPerColumn)
 IOne=0;
 
 
-context.beginPath();
-context.setLineDash([10]);
-context.moveTo(InitialPos,InitialPos);
-context.lineTo(InitialPos,InitialPos*PlusPerColumn);
+c.beginPath();
+c.setLineDash([10]);
+c.moveTo(InitialPos,InitialPos);
+c.lineTo(InitialPos,InitialPos*PlusPerColumn);
 
 
 while(IOne<PlusPerRow)
