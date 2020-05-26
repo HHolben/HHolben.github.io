@@ -33,8 +33,11 @@ IOne=0;
 
 c.beginPath();
 c.setLineDash([10]);
+c.strokeStyle="rgb(204, 204, 204)";
 c.moveTo(InitialPos,InitialPos);
 c.lineTo(InitialPos,InitialPos*PlusPerColumn);
+c.stroke;
+
 
 
 while(IOne<PlusPerRow)
