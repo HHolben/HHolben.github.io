@@ -79,7 +79,7 @@ h2{
     transition: 0.3s;
     padding: 10px;
     height:366px;
-    width:366px;
+    width:100%;
     text-align: center;
     overflow:auto;
 }
