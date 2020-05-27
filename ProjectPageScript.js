@@ -5,7 +5,7 @@ var canvas=document.querySelector("Canvas");
 var c=canvas.getContext("2d");
 
 
-c.canvas.width=window.innerWidth;
+//c.canvas.width=window.innerWidth;
 
 var SquareWidth=3;
 var InitialPos=2*SquareWidth;

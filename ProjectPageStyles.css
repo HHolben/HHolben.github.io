@@ -17,6 +17,8 @@ body{
     background-image: radial-gradient(rgb(220,230,220), rgb(255,255,255),rgb(255,255,255));
     font-family: "Arial", Helvetica, sans-serif;
     overflow:auto;
+    height:300%;
+    width: 1270px;
 }
 
 
@@ -58,7 +60,7 @@ h2{
 
 .column{
     float: left;
-    width: 33.3333333333333333%;
+    width: 370px;
     padding: 10px;
 }
 
@@ -131,7 +133,10 @@ h2:hover{
 
 
 
+p{
 
+    margin:10px;
+}
 
 
 
