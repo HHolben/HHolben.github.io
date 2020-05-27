@@ -123,12 +123,16 @@ Ok, now I've got to get a grid layout
 
 
 
-
 h2:hover{
     padding: 15px;
     text-decoration: underline;
     color:rgb(247, 98, 12);
 
+}
+
+img{
+
+    width: 330px;
 }
 
 
