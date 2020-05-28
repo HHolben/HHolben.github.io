@@ -86,7 +86,7 @@ p{
 
 .StoryBoard{
     
-    max-width: 100px;
+    max-width: 30%;
    transform: rotateZ(90deg);
     display:block;
     object-fit:contain;
