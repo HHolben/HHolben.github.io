@@ -29,6 +29,11 @@ img{
     width: 500px;
 }
 
+
+img8{
+    transform: rotate(180deg);
+}
+
 .TimesMadnessPicture{
 
     transform: rotate(180deg);
