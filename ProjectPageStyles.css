@@ -126,10 +126,13 @@ img{
     width: 300px;
 }
 
+/**
 .TimesMadnessPicture{
 
     transform: rotate(180deg);
 }
+
+**/
 
 
 p{
