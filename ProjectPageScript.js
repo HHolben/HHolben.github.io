@@ -12,7 +12,7 @@ var InitialPos=2*SquareWidth;
 
 
 
-var PlusPerRow=22;
+var PlusPerRow=100;
 var PlusPerColumn=3*PlusPerRow;
 var IOne=0;
 var ITwo=0;
