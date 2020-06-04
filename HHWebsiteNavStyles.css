@@ -47,7 +47,7 @@ nav li{
     
 
 }
-ul li a{
+ul li a, li a:visited{
 
     text-decoration: none;
     color: rgb(0,255,0);
@@ -66,11 +66,3 @@ ul li a:hover{
 
 }
 
-
-ul li a:visited{
-
-    color: rgb(0,255,0);
-    text-decoration:none;
-    text-shadow:red;
-
-}
