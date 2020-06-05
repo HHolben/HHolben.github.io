@@ -26,11 +26,22 @@ body{
 }
 
 .column{
-    float: left;
     width: auto;
     padding: 10px;
     object-fit: contain;
+    display:inline-block;
 }
+
+.row{
+    height: 33.3333333333333333%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
 .card, .card:visited {
     /*box-shadow: 0 0 10px 0 rgb(99, 7, 204);*/
     box-shadow: 0 0 10px 0 rgb(0, 0, 0);
