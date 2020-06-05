@@ -5,7 +5,7 @@ This is the CSS for the nav elements on the project page
 html{
 
 
-    background-color: rgb(24, 153, 52);
+    background-color: rgb(0, 138, 62);
 }
 body{
    /* display: -webkit-flex;
@@ -18,7 +18,45 @@ body{
     font-family: "Arial", Helvetica, sans-serif;
     overflow:auto;
     height:300%;
-    width: 1270px;
+    width: 110%;
+}
+
+.column{
+    float: left;
+    width: 370px;
+    padding: 10px;
+}
+.card, .card:visited {
+    /*box-shadow: 0 0 10px 0 rgb(99, 7, 204);*/
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+    padding: 10px;
+    height:366px;
+    width:100%;
+    text-align: center;
+   /* overflow:auto;*/
+    color:rgb(0, 0, 0)
+}
+
+/**
+Ok, now I've got to get a grid layout 
+
+**/
+
+
+
+
+
+
+.card:hover{
+    box-shadow: 0 0 30px 0 rgb(0, 255, 0);
+    color: rgb(247, 98, 12);
+    padding: 1px 8px;
+    height:370px;
+    width:101%;
+
+    
 }
 
 
@@ -31,10 +69,14 @@ img{
 
 
 
+
+
+
 iframe{
 
     width:80%;
     height: 200%;
+    overflow: auto;
 }
 /*
 .TimesMadnessPicture{
