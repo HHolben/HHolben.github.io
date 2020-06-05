@@ -21,10 +21,15 @@ body{
     width: 110%;
 }
 
+.BookLayout{
+    overflow:scroll;
+}
+
 .column{
     float: left;
     width: 370px;
     padding: 10px;
+    object-fit: contain;
 }
 .card, .card:visited {
     /*box-shadow: 0 0 10px 0 rgb(99, 7, 204);*/
