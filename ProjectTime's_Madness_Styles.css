@@ -21,6 +21,13 @@ body{
     width: 500%;
 }
 
+
+
+    .BookContents, .BookContents:visited{
+
+color: black;
+    }
+
 .BookLayout{
     overflow:scroll;
 }
