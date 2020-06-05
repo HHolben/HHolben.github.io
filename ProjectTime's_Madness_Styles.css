@@ -25,12 +25,22 @@ body{
     overflow:scroll;
 }
 
+
+.ProjectLinks{
+    background-color:transparent;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
 .column{
     width: auto;
     padding: 10px;
     object-fit: contain;
     display:inline-block;
 }
+
+
 
 .row{
     height: 33.3333333333333333%;
@@ -41,6 +51,9 @@ body{
     clear: both;
 
 }
+
+
+
 
 .card, .card:visited {
     /*box-shadow: 0 0 10px 0 rgb(99, 7, 204);*/
