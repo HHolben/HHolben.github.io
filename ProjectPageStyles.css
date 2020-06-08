@@ -1,12 +1,8 @@
 /*
 
 This is the CSS for the nav elements on the project page
+
 */
-html{
-
-
-    background-color: rgb(24, 153, 52);
-}
 body{
    /* display: -webkit-flex;
     display: flex;
@@ -18,7 +14,7 @@ body{
     font-family: "Arial", Helvetica, sans-serif;
     overflow:auto;
     height:300%;
-    width: 1270px;
+    width: 2000;
 }
 
 
