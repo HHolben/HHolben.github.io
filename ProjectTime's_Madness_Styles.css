@@ -82,7 +82,7 @@ a, a:visited{
 color:black;
 }
 
-p, p:visited{
+.BookContents, .BookContents:visited{
     color: black
 }
 
