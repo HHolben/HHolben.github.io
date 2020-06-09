@@ -75,19 +75,12 @@ color: black;
     color:rgb(0, 0, 0)
 }
 
-body, body:visited{
 
-    color:black;
-}
-
-
-a, a:visited{
-color:black;
-}
-
-.BookContents, .BookContents:visited{
+.BookContents ol li a, .BookContents ol li a:visited{
     color: black;
+    text-decoration:none;
 }
+
 
 
 
