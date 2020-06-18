@@ -19,6 +19,8 @@ body{
     overflow:auto;
     height:300%;
     width: 500%;
+    position:fixed;
+    animation: move 5s;
 
 
 
