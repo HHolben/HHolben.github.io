@@ -19,8 +19,20 @@ body{
     overflow:auto;
     height:300%;
     width: 500%;
+
+
+
+
 }
 
+
+
+@keyframes move{
+
+    from{right:200px;}
+    to {left:0px;}
+    
+}
 
 
     .BookContents, .BookContents:visited{
