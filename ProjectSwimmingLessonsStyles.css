@@ -64,6 +64,8 @@ p{
     margin:10px;
 
     padding-right: 10px;
+
+    overflow:auto;
 }
 
 
@@ -83,24 +85,5 @@ h1{
 
 
 
-aside{
 
-float:right;
-width: 10%;
-padding: 15px;
-
-
-}
-
-
-
-
-article{
-    width:100%
-    
-}
-
-div.paragraph1{
-    text-indent:50px;
-}
 
