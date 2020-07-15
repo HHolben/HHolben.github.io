@@ -8,7 +8,8 @@ html{
   
 
         background-color: lightblue; /*Alternative in case you can't do gradients*/
-        background-image: linear-gradient(rgb(0, 252, 243),rgb(1, 112, 247))
+        background-image: linear-gradient(rgb(0, 252, 243),rgb(1, 112, 247));
+        margin:15px;
     }
 
 
