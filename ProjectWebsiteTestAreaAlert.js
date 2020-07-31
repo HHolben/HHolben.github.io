@@ -7,7 +7,7 @@ fill(0,0,0);
 rect(50,50,50,50);
 }\*/
 
-
+window.alert("Welcome to the party");
    
 var canvas=document.querySelector("Canvas");
 var c=canvas.getContext("2d");
