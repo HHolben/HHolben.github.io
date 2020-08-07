@@ -42,7 +42,7 @@ body{
 
 .TopOfPage{
     background-color: rgb(255, 255, 255, 0.8);
-    background-image:"WebsiteProjectsHeaderSectionPicture.png" alt="A mess made in lego digital designer."
+    background-image:url("WebsiteProjectsHeaderSectionPicture.png");
 }
 
 
