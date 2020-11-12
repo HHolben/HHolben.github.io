@@ -7,8 +7,9 @@ This is the CSS for the Home Page (index.html)
 html{
 
     background-color: rgb(0, 0, 0);
-    background-image:"MilliganRoboticsHomePageInvertedWiringPic.png";
+    background-image:url("MilliganRoboticsHomePageInvertedWiringPic.png");
     font-family: "Times New Roman", Times, serif;
+
 }
 
 body{
@@ -16,13 +17,17 @@ body{
 
     margin: 10;
 
-    background-color:  rgba(255, 255, 255,50);
-    font-family: "Arial", Helvetica, sans-serif;
+    background-color:  rgba(255, 255, 255,80%);
+    font-family: "Arial", Helvetica, sans-serif
+    
+
+
 }
 
 section{
 
     padding: 30px;
+
 }
 
 
@@ -113,7 +118,6 @@ content{
 
     margin: 10;
 
-    background-color: white;
     font-family: "Arial", Helvetica, sans-serif;
     width:fit-content;
 }
