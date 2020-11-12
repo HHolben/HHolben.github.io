@@ -17,7 +17,6 @@ body{
 
     background-color: white;
     font-family: "Arial", Helvetica, sans-serif;
-    width:fit-content;
 }
 
 section{
@@ -116,14 +115,14 @@ body
     
 }
 
-body{
+content{
     
 
     margin: 10;
 
     background-color: white;
     font-family: "Arial", Helvetica, sans-serif;
-    width:fit-content 80%;
+    width:fit-content;
 }
 
 section{
@@ -215,3 +214,68 @@ img{
 
   
     }
+
+    /*
+
+This is the CSS for the nav elements in my website
+
+*/
+
+
+
+
+
+nav {
+
+    float:center;
+}
+
+nav ul{
+
+  background-image: linear-gradient(to bottom,rgb(0,0,0),rgb(99, 7, 204));
+  list-style:none;
+  text-decoration:none;
+
+
+}
+
+
+
+
+nav li{
+    
+    font-size: 150%;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration:none; /*This should set the hyperlinks to no underline*/
+    text-shadow:red;
+   /* text-shadow: rgb(80, 80, 80);*/
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+
+    
+
+}
+ul li a, li a:visited{
+
+    text-decoration: none;
+    color: rgb(0,255,0);
+   
+}
+
+ul li a:hover{
+    text-shadow:0px 0px 20px rgb(247, 98, 12);
+
+    font-size: 155%;
+    text-decoration:none;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left:0px;
+
+}
+
