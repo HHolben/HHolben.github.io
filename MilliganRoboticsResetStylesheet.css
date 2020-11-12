@@ -6,7 +6,8 @@ This is the CSS for the Home Page (index.html)
 
 html{
 
-    background-color: rgb(24, 153, 52);
+    background-color: rgb(0, 0, 0);
+    background-image:"MilliganRoboticsHomePageInvertedWiringPic.png";
     font-family: "Times New Roman", Times, serif;
 }
 
@@ -15,7 +16,7 @@ body{
 
     margin: 10;
 
-    background-color: white;
+    background-color:  rgba(255, 255, 255,50);
     font-family: "Arial", Helvetica, sans-serif;
 }
 
@@ -96,17 +97,9 @@ img{
     padding: 20px;
     margin-top:50px;
   
-    }/*
+    }
 
-This is the CSS for the Home Page (index.html)
 
-*/
-
-html{
-
-    background-color: rgb(24, 153, 52);
-    font-family: "Times New Roman", Times, serif;
-}
 
 body
 {
@@ -133,7 +126,7 @@ section{
 
 
 h1{
-    color:rgb(71, 138, 9);
+    color:rgb(234, 113, 37); /*I got this RGB value from an element of the Milligan University website*/
     margin-left:10px;
 }
 
@@ -238,6 +231,8 @@ nav ul{
 
 
 }
+
+
 
 
 
