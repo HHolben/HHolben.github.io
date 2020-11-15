@@ -201,7 +201,7 @@ p{
 img{
     
     
-    width:80%;
+    width:0%;
    
     display:block;
     object-fit:contain;
@@ -235,6 +235,7 @@ nav ul{
   background-color:rgb(234, 113, 37); /*I got this RGB value from an element of the Milligan University website*/
   list-style-type:none;
   text-decoration:none;
+  width:100px;
 
 
 }
@@ -245,19 +246,20 @@ nav ul{
 
 
 nav li{
+
+
     
     font-size: 150%;
     font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-    display: inline-block;
-    margin-left: 50px;
+    
+    margin-left: 0px;
     text-decoration:none; /*This should set the hyperlinks to no underline*/
     text-shadow:red;
-   /* text-shadow: rgb(80, 80, 80);*/
 
     padding-top: 20px;
-    padding-right: 20px;
+    padding-right: 30px;
     padding-bottom: 20px;
-    padding-left:20px;
+    padding-left:0px;
 
 
 
@@ -266,8 +268,9 @@ li a, li a:visited{
 
     display: block;
     width: 50px;
-    background-color:white;
     text-decoration: none;
+    color:rgb(0,0,0);
+
 
 }
 
