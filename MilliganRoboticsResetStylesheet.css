@@ -227,10 +227,13 @@ nav {
     float:center;
 }
 
+
+
+
 nav ul{
 
-  background-image: linear-gradient(to bottom,rgb(0,0,0),rgb(99, 7, 204));
-  list-style:none;
+  background-color:rgb(234, 113, 37); /*I got this RGB value from an element of the Milligan University website*/
+  list-style-type:none;
   text-decoration:none;
 
 
@@ -256,14 +259,16 @@ nav li{
     padding-bottom: 20px;
     padding-left:20px;
 
-    
+
 
 }
-ul li a, li a:visited{
+li a, li a:visited{
 
+    display: block;
+    width: 50px;
+    background-color:white;
     text-decoration: none;
-    color: rgb(0,255,0);
-   
+
 }
 
 ul li a:hover{
