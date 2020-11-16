@@ -264,6 +264,10 @@ nav li{
     padding-left:0px;
 
     width: 100px;
+    border-bottom: 3px solid;
+    border-left:3px solid grey;
+    border-right:3px solid grey;
+
 
 
 
