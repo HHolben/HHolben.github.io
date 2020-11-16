@@ -17,7 +17,6 @@ body{
 
     margin: 10;
 
-    background-color:  rgba(255, 255, 255,80%);
     font-family: "Arial", Helvetica, sans-serif
     
 
@@ -34,6 +33,7 @@ section{
 
 h1{
     color:rgb(71, 138, 9)
+
 }
 
 
@@ -57,6 +57,8 @@ article{
 
 div.paragraph1{
     text-indent:50px;
+        background-color:  rgba(255, 255, 255,80%);
+
 }
 
 
@@ -232,7 +234,6 @@ nav {
 
 nav ul{
 
-  background-color:rgb(234, 113, 37); /*I got this RGB value from an element of the Milligan University website*/
   list-style-type:none;
   text-decoration:none;
   width:100px;
@@ -252,14 +253,19 @@ nav li{
     font-size: 150%;
     font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
     
-    margin-left: 0px;
     text-decoration:none; /*This should set the hyperlinks to no underline*/
     text-shadow:red;
+  background-color:rgb(234, 113, 37, 0.85); /*I got this RGB value from an element of the Milligan University website*/
 
-    padding-top: 20px;
-    padding-right: 30px;
-    padding-bottom: 20px;
+    text-decoration:none;
+    padding-top: 0px;
+    padding-right: 50px;
+    padding-bottom: 0px;
     padding-left:0px;
+
+    width: 100px;
+
+
 
 
 
@@ -275,14 +281,17 @@ li a, li a:visited{
 }
 
 ul li a:hover{
-    text-shadow:0px 0px 20px rgb(247, 98, 12);
-
-    font-size: 155%;
+    color: rgb(234, 113, 37,0.85);
+    
     text-decoration:none;
     padding-top: 0px;
-    padding-right: 0px;
+    padding-right: 50px;
     padding-bottom: 0px;
     padding-left:0px;
+    width: 100px;
+
+   background-color:rgb(255 255 255); /*I got this RGB value from an element of the Milligan University website*/
+
 
 }
 
