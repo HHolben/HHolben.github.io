@@ -35,16 +35,6 @@ section{
 
 
 
-div.paragraph1{
-    background-color:  rgba(255, 255, 255,80%);
-    
-
-}
-
-
-p{
-    padding-right: 10px;
-}
 
 .column{
     float: left;
@@ -114,7 +104,6 @@ section{
 h1{
     color:rgb(234, 113, 37); /*I got this RGB value from an element of the Milligan University website*/
     margin-left:360px;
-    background-color:  rgba(255, 255, 255,80%);
     width: 200px;
     height:50px;
     margin-bottom:0;
@@ -137,7 +126,10 @@ padding: 15px;
 
 
 article{
-    width:100%
+    width:100%;
+    background-color:  rgba(255, 255, 255,80%);
+
+
 
 }
 
