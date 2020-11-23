@@ -160,15 +160,20 @@ div.paragraph2{
 }
 
 .aboutuscolumn{
-    width: 100%;
+    width: 50%;
     left:30px;
+    background-color:  rgba(255, 255, 255,80%);
+
 
 }
 
 
 .socialmediacolumn{
-    left: 70px;
-    
+    position: absolute;
+    left: 1250px;
+    width: 20%;
+
+    color: white;
 }
 
 
@@ -295,3 +300,8 @@ ul li a:hover{
 
 }
 
+
+footer:{
+    position: absolute;
+    bottom: 5 px;
+}
