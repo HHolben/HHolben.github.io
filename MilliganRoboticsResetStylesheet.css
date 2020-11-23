@@ -36,11 +36,6 @@ section{
 
 
 
-.column{
-    float: left;
-    width: 50%;
-   
-}
 
 .row{
     height: 50%;
@@ -94,16 +89,10 @@ content{
     width:fit-content;
 }
 
-section{
-
-    padding: 30px;
-}
-
-
 
 h1{
     color:rgb(234, 113, 37); /*I got this RGB value from an element of the Milligan University website*/
-    margin-left:360px;
+    margin-left:0px;
     width: 200px;
     height:50px;
     margin-bottom:0;
@@ -113,7 +102,7 @@ h1{
 h2
 {
     color:rgb(255, 255, 255);
-    margin-left:360px;
+    margin-left:90px;
     width: 200px;
     height:50px;
     margin-bottom:0;
@@ -155,28 +144,37 @@ div.paragraph2{
 
 .column{
     float: left;
-    width: 45%;
-       margin-left:10px;
+    width: 30%;
+    position: absolute;
+    left:250px;
 }
+
+
+
 
 
 .navbarcolumn{
     float: left;
-    width: 45%;
-       margin-left:0px;
+    width: 30px;
+    margin-left:0px;
 }
 
 .aboutuscolumn{
     width: 100%;
-    margin-left:10px;
-    
+    left:30px;
 
 }
 
 
+.socialmediacolumn{
+    left: 70px;
+    
+}
+
 
 .row{
     height: 50%;
+
 }
 .row:after {
     content: "";
