@@ -321,6 +321,7 @@ ul li a:hover{
     padding-left:0px;
     width: 100px;
 
+
    background-color:rgb(255 255 255); /*I got this RGB value from an element of the Milligan University website*/
 
 
@@ -330,4 +331,11 @@ ul li a:hover{
 footer{
     position: absolute;
     bottom: 5 px;
+        width: 100%;
+    background-color:  rgba(255, 255, 255,80%);
+    right:0px;
+    border-bottom: 3px solid;
+    border-left:3px solid grey;
+    border-right:3px solid grey;
+
 }
