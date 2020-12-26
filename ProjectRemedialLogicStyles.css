@@ -1,0 +1,219 @@
+/*
+
+This is the CSS for Remedial Logic
+
+*/
+
+html{
+
+    background-color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+}
+
+body{
+    
+
+    margin: 10;
+
+    background-color: white;
+    font-family: "Arial", Helvetica, sans-serif;
+    width:fit-content;
+}
+
+section{
+
+    padding: 30px;
+}
+
+
+
+h1{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:rgb(0, 0, 0);
+    color:rgb(198, 0, 0);
+}
+
+
+
+aside{
+
+float:right;
+width: 10%;
+padding: 15px;
+
+
+}
+
+
+
+
+article{
+    width:100%
+    
+}
+
+div.paragraph1{
+    text-indent:50px;
+}
+
+
+p{
+    padding-right: 10px;
+}
+
+.column{
+    float: left;
+    width: 50%;
+   
+}
+
+.row{
+    height: 100%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+.card{
+    box-shadow: 0 5px 10px 0 rgb(99, 7, 204);
+    
+    transition: 0.3s;
+
+    width: 100%;
+   
+    text-align: center;
+
+}
+
+
+img{
+    
+    
+    width:80%;
+   
+    display:block;
+    object-fit:contain;
+
+    padding: 20px;
+    margin-top:50px;
+  
+    }/*
+
+This is the CSS for the Home Page (index.html)
+
+*/
+
+html{
+
+    background-color: rgb(24, 153, 52);
+    font-family: "Times New Roman", Times, serif;
+}
+
+body
+{
+
+    color:(0,0,0,50);
+    
+}
+
+body{
+    
+
+    margin: 10;
+
+    background-color: white;
+    font-family: "Arial", Helvetica, sans-serif;
+    width:fit-content 80%;
+}
+
+section{
+
+    padding: 30px;
+}
+
+
+
+h1{
+    color:rgb(71, 138, 9);
+    margin-left:10px;
+}
+
+
+
+aside{
+
+float:right;
+width: 10%;
+padding: 15px;
+
+
+}
+
+
+
+
+article{
+    width:100%
+    
+}
+
+div.paragraph1{
+    text-indent:50px;
+}
+
+
+p{
+
+    padding-left: 10px;
+    margin-left:10px;
+
+}
+
+.column{
+    float: left;
+    width: 45%;
+       margin-left:10px;
+
+    
+
+   
+}
+
+.row{
+    height: 100%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+.card{
+    box-shadow: 0 5px 10px 0 rgb(99, 7, 204);
+    
+    transition: 0.3s;
+
+    width: 10px;
+   
+    text-align: center;
+
+
+
+}
+
+
+img{
+    
+    
+    width:80%;
+   
+    display:block;
+    object-fit:contain;
+
+    padding: 20px;
+    margin-top:50px;
+
+  
+    }
