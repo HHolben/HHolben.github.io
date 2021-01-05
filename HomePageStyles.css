@@ -58,32 +58,32 @@ p{
 }
 
 
-a{
-
-    text-decoration: none;
-    color:rgb(0,255,0);
-
-}
-
-a:hover
-{
+.column a{
     color:rgb(0,0,255);
     text-decoration: none;
 
 }
 
-a:visited
+.column a:hover
+{
+    text-decoration: none;
+        color:rgb(0,255,0);
+
+
+}
+
+.column a:visited
 {
 
-    color:rgb(0,255,0);
+    color:rgb(0,0,255);
     text-decoration: none;
 
 
 }
 
-a:visited:hover{
+.column a:visited:hover{
 
-    color:rgb(0,0,255);
+    color:rgb(0,255,0);
     text-decoration: none;
 
 
