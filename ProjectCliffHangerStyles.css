@@ -83,6 +83,13 @@ p{
     text-align: center;
 }
 
+.VideoFrame
+{
+  text-align: center;
+  width: 90%;
+
+}
+
 
 .StoryBoard{
     
@@ -90,4 +97,5 @@ p{
    transform: rotateZ(90deg);
     display:block;
     object-fit:contain;
+
     }
