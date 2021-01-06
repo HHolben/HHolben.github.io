@@ -288,7 +288,7 @@ nav li{
     
     text-decoration:none; /*This should set the hyperlinks to no underline*/
     text-shadow:red;
-  background-color:rgb(234, 113, 37, 0.85); /*I got this RGB value from an element of the Milligan University website*/
+    background-color:rgb(234, 113, 37, 0.85); /*I got this RGB value from an element of the Milligan University website*/
 
     text-decoration:none;
     padding-top: 0px;
@@ -303,10 +303,18 @@ nav li{
 
 
 
+    animation:NavBarEntry 1s;
 
-
+   
 
 }
+
+
+
+
+
+
+
 li a, li a:visited{
 
     display: block;
@@ -346,3 +354,12 @@ footer{
     border-right:3px solid grey;
 
 }
+
+
+@keyframes NavBarEntry 
+{
+
+    from {width:0px;}
+    to {width:100px;}
+}
+
