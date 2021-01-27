@@ -21,6 +21,7 @@ body{
     width: 500%;
     position:fixed;
     animation: move 5s;
+    background-color: rgba(255, 255, 255);
 
 
 
@@ -92,7 +93,7 @@ color: black;
 
 
 .BookContents{
-background-color:rgb(213, 205, 189);
+/*background-color:rgb(213, 205, 189);*/
 }
 
 .BookContents ol li a, .BookContents ol li a:visited{
