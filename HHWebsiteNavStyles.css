@@ -54,7 +54,7 @@ ul li a, li a:visited
     font-size: 150%;
 }
 
-ul li a:hover
+nav ul li a:hover
 {
     text-shadow:0px 0px 20px rgb(225, 129, 0);
     -webkit-text-stroke-width:0.25px;
