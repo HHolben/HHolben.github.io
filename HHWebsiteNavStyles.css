@@ -66,8 +66,10 @@ ul li a:hover
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left:0px;
+    border:3px red solid;
     border-radius:500%;
-    background-color:red;
+    background-color:rgb(0, 100, 0,0.5);
+
 }
 
 
