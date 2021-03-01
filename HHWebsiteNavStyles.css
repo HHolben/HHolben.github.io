@@ -47,7 +47,7 @@ nav li{
     
 
 }
-ul li a, li a:visited
+nav ul li a, li a:visited
 {
     text-decoration: none;
     color: rgb(0,255,0);
