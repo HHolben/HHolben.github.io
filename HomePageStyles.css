@@ -242,6 +242,13 @@ color: black;
 
     }
 
+footer a, footer a:visited
+{
+
+    color: black;
+    text-decoration: none;
+
+}
 
     button
     {
