@@ -3,6 +3,15 @@
 This is the CSS for the nav elements on the project page
 
 */
+
+html{
+
+    background-color: rgb(24, 153, 52);
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+
 body{
     /* display: -webkit-flex;
      display: flex;
@@ -42,7 +51,7 @@ body{
  
  .TopOfPage{
      background-color: rgb(255, 255, 255, 0.8);
-     background-image:url("WebsiteProjectsHeaderSectionPicture.png");
+     /*background-image:url("WebsiteProjectsHeaderSectionPicture.png");*/
  }
  
  
