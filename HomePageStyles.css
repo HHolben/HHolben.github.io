@@ -1,261 +1,126 @@
 /*
-
 This is the CSS for the Home Page (index.html)
-
 */
 
-html{
-
+html {
+    min-height: 100%;
     background-color: rgb(24, 153, 52);
-    font-family: "Times New Roman", Times, serif;
 }
 
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+/* Translucent lime-tinted image over the white body */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
 
-section{
+    background-image: url("HomepageBackground.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    background-color: rgba(0, 255, 0, 0.3);
+    background-blend-mode: multiply;
+
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Keep page content above the background overlay */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+section {
     padding: 30px;
 }
 
-
-
-h1{
-    color:rgb(71, 138, 9)
+h1 {
+    color: rgb(71, 138, 9);
+    margin-left: 10px;
 }
 
-
-
-aside{
-
-float:right;
-width: 10%;
-padding: 15px;
-
-
+aside {
+    float: right;
+    width: 10%;
+    padding: 15px;
 }
 
-
-
-
-article{
-    width:100%
-    
+article {
+    width: 100%;
 }
 
-div.paragraph1{
-    text-indent:50px;
+div.paragraph1 {
+    text-indent: 50px;
+    margin-left: 3%;
 }
 
-
-p{
+p {
     padding-right: 10px;
     padding-left: 10px;
-    margin-left:10px;
+    margin-left: 10px;
     line-height: 2;
-
-    color:rgb(0, 255, 0);
-
+    color: rgb(0, 255, 0);
 }
 
-
-.column a{
-    color:rgb(0,0,255);
-    text-decoration: none;
-
-}
-
-.column a:hover
-{
-    text-decoration: none;
-        color:rgb(0,255,0);
-
-
-}
-
-.column a:visited
-{
-
-    color:rgb(0,0,255);
-    text-decoration: none;
-
-
-}
-
-.column a:visited:hover{
-
-    color:rgb(0,255,0);
-    text-decoration: none;
-
-
-}
-
-.column{
-    float: left;
-    width: 50%;
-   
-}
-
-.row{
+.row {
     height: 100%;
 }
-.row:after {
+
+.row::after {
     content: "";
     display: table;
     clear: both;
-
-}
-.card{
-    box-shadow: 0 5px 10px 0 rgb(99, 7, 204);
-    
-    transition: 0.3s;
-
-    width: 100%;
-   
-    text-align: center;
-
 }
 
-
-img{
-    
-    
-    width:80%;
-   
-    display:block;
-    object-fit:contain;
-
-    padding: 20px;
-    margin-top:50px;
-  
-    }/*
-
-This is the CSS for the Home Page (index.html)
-
-*/
-
-html{
-
-    background-color: rgb(24, 153, 52);
-    font-family: "Times New Roman", Times, serif;
-}
-
-
-
-body{
-    
-    color:(0,0,0,50);
-    margin: 10;
-
-    background-color: white;
-    font-family: "Arial", Helvetica, sans-serif;
-    width:fit-content 80%;
-}
-
-section{
-
-    padding: 30px;
-}
-
-
-
-h1{
-    color:rgb(71, 138, 9);
-    margin-left:10px;
-}
-
-
-
-aside{
-
-float:right;
-width: 10%;
-padding: 15px;
-
-
-}
-
-
-
-
-article{
-    width:100%
-    
-}
-
-div.paragraph1{
-    text-indent:50px;
-}
-
-
-
-.column{
+.column {
     float: left;
     width: 45%;
-       margin-left:10px;
-
-    
-
-   
+    margin-left: 10px;
 }
 
-.row{
-    height: 100%;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-
-}
-.card{
-    box-shadow: 0 5px 10px 0 rgb(99, 7, 204);
-    
-    transition: 0.3s;
-
-    width: 10px;
-   
-    text-align: center;
-
-
-
-}
-
-
-img{
-    
-    
-    width:80%;
-   
-    display:block;
-    object-fit:contain;
-
-    padding: 20px;
-    margin-top:50px;
-
-  
-    }
-
-    footer
-    {
-
-color: black;
-
-    }
-
-footer a, footer a:visited
-{
-
-    color: black;
+.column a,
+.column a:visited {
+    color: rgb(0, 0, 255);
     text-decoration: none;
-
 }
 
-    button
-    {
-        width: 100px;
-        height:100px;
-        border-radius:100%;
+.column a:hover,
+.column a:visited:hover {
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+}
 
-        background-color:red;
-        color: white;
-    }
+.card {
+    box-shadow: 0 5px 10px 0 rgb(99, 7, 204);
+    transition: 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 80%;
+    display: block;
+    object-fit: contain;
+    padding: 10px;
+    margin-top: 50px;
+    float: right;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+}

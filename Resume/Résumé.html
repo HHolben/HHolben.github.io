@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Résumé page</title>
+<meta charset="utf-8"/>
+<link href="RésuméStyles.css" rel="stylesheet" type="text/css"/>
+<link href="../Navbar/NavbarStyles.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.w3schools.com/w3css/5/w3.css" rel="stylesheet"/>
+<style type="text/css">
+      @page { size: 8.5in 11in; margin: 1in; }
+
+      p {
+        line-height: 115%;
+        text-align: left;
+        orphans: 2;
+        widows: 2;
+        margin-bottom: 0.1in;
+        direction: ltr;
+        background: transparent;
+      }
+
+      a:link { color: #0563c1; text-decoration: underline; }
+      a:visited { color: #954f72; text-decoration: underline; }
+
+      .tab-panel {
+        display: none;
+        padding: 16px;
+      }
+
+      .tab-panel.active {
+        display: block;
+      }
+
+      .certifications-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 20px;
+      }
+
+      .cert-card {
+        width: 260px;
+        height: 180px;
+        perspective: 1000px;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
+
+      .cert-card:link,
+      .cert-card:visited,
+      .cert-card:hover,
+      .cert-card:active {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .cert-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.7s;
+        transform-style: preserve-3d;
+      }
+
+      .cert-card:hover .cert-card-inner,
+      .cert-card:focus .cert-card-inner,
+      .cert-card:focus-visible .cert-card-inner {
+        transform: rotateX(180deg);
+      }
+
+      .cert-card-front,
+      .cert-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        background: white;
+      }
+
+      .cert-card-front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .cert-card-back {
+        transform: rotateX(180deg);
+        padding: 16px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #f7f7f7;
+        color: #111;
+      }
+
+      .cert-card-back h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+      }
+
+      .cert-card-back p {
+        margin: 6px 0;
+        line-height: 1.4;
+      }
+    </style>
+</head>
+<body>
+<header>
+<nav id="RésuméPageTop">
+<ul>
+<li><a href="https://hholben.github.io/index.html">About Me</a></li>
+<li><a href="https://hholben.github.io/Projects/WebsiteProjects.html">Projects</a></li>
+<li><a href="https://hholben.github.io/Résumé/Résumé.html">My Résumé</a></li>
+<li><a href="https://hholben.github.io/Blog/index.html">Blog</a></li>
+<li><a href="https://hholben.github.io/ContactPage/ContactPage.html">Contact Me</a></li>
+</ul>
+</nav>
+<div class="w3-bar w3-black">
+<button class="w3-bar-item w3-button" onclick="openTab('Resume')">Résumé</button>
+<button class="w3-bar-item w3-button" onclick="openTab('CV')">CV</button>
+<button class="w3-bar-item w3-button" onclick="openTab('Certifications')">Certifications</button>
+</div>
+</header>
+<main>
+<!-- Resume Tab -->
+<div class="w3-container w3-display-container tab-panel active" id="Resume"><p>Loading résumé...</p></div>
+<!-- CV Tab -->
+<div class="w3-container w3-display-container tab-panel" id="CV"><p>Loading CV...</p></div>
+<!-- Certifications Tab -->
+<div class="w3-container w3-display-container tab-panel" id="Certifications">
+<h2>Certifications</h2>
+<div class="certifications-grid" id="certifications-grid"></div>
+</div>
+</main>
+<footer>
+<div id="dynamicLinksContainer"></div>
+<p>Copyright 2026 Henry Holben.</p>
+</footer>
+<script>
+  function openTab(tabName) {
+    const panels = document.getElementsByClassName("tab-panel");
+    for (let i = 0; i < panels.length; i++) {
+      panels[i].classList.remove("active");
+    }
+    document.getElementById(tabName).classList.add("active");
+  }
+
+  async function loadHtmlFragment(targetId, filePath) {
+    const target = document.getElementById(targetId);
+
+    if (!target) {
+      console.error(`Missing target element: ${targetId}`);
+      return;
+    }
+
+    try {
+      const response = await fetch(filePath);
+      if (!response.ok) {
+        throw new Error(`Could not load ${filePath}: ${response.status}`);
+      }
+
+      target.innerHTML = await response.text();
+    } catch (error) {
+      console.error(error);
+      target.innerHTML = `<p>Unable to load ${filePath}.</p>`;
+    }
+  }
+
+  function parseEarnedDate(dateStr) {
+    if (!dateStr || typeof dateStr !== "string") return null;
+
+    const parts = dateStr.trim().split("/");
+    if (parts.length !== 3) return null;
+
+    let month = parseInt(parts[0], 10);
+    let day = parseInt(parts[1], 10);
+    let year = parseInt(parts[2], 10);
+
+    if (Number.isNaN(month) || Number.isNaN(day) || Number.isNaN(year)) {
+      return null;
+    }
+
+    if (year < 100) {
+      year = year < 50 ? 2000 + year : 1900 + year;
+    }
+
+    return { year, month, day };
+  }
+
+  function compareEarnedDatesDescending(a, b) {
+    const da = parseEarnedDate(a.earnedDate);
+    const db = parseEarnedDate(b.earnedDate);
+
+    if (!da && !db) return 0;
+    if (!da) return 1;
+    if (!db) return -1;
+
+    if (db.year !== da.year) return db.year - da.year;
+    if (db.month !== da.month) return db.month - da.month;
+    return db.day - da.day;
+  }
+
+  async function loadCertifications() {
+    try {
+      const response = await fetch("Certifications/Certifications.json");
+      if (!response.ok) {
+        throw new Error(`Could not load Certifications/Certifications.json: ${response.status}`);
+      }
+
+      const certifications = await response.json();
+      const sortedCertifications = [...certifications].sort(compareEarnedDatesDescending);
+
+      const grid = document.getElementById("certifications-grid");
+      grid.innerHTML = "";
+
+      sortedCertifications.forEach(cert => {
+        const parsed = parseEarnedDate(cert.earnedDate);
+        const year = parsed ? parsed.year : "Unknown";
+
+        const card = document.createElement("a");
+        card.className = "cert-card";
+        card.href = cert.link;
+        card.target = "_blank";
+        card.rel = "noopener noreferrer";
+        card.setAttribute("aria-label", cert.name);
+
+        card.innerHTML = `
+          <div class="cert-card-inner">
+            <div class="cert-card-front">
+              <img src="${cert.image}" alt="${cert.name}">
+            </div>
+            <div class="cert-card-back">
+              <h3>${cert.name}</h3>
+              <p><strong>Certifying Organization:</strong> ${cert.organization}</p>
+              <p><strong>Year:</strong> ${year}</p>
+            </div>
+          </div>
+        `;
+
+        grid.appendChild(card);
+      });
+    } catch (error) {
+      console.error("Error loading certifications:", error);
+      const grid = document.getElementById("certifications-grid");
+      if (grid) {
+        grid.innerHTML = "<p>Unable to load certifications at this time.</p>";
+      }
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    loadHtmlFragment("Resume", "ResumeContent.html");
+    loadHtmlFragment("CV", "CVContent.html");
+    loadCertifications();
+  });
+</script>
+</body>
+</html>

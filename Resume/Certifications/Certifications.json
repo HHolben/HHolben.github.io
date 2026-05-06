@@ -1,0 +1,65 @@
+[
+  {
+    "name": "CPR Choice Workplace CPR Training",
+    "organization": "CPR Choice",
+    "earnedDate": "2/11/26",
+    "image": "Certifications/CPRchoice/CPR&AEDcertification.png",
+    "link": "ATC_AM349109679897_Fusion%20EDU%20Workshop%20-%20Milligan%20University%20Intro%20to%20Fusion.pdf"
+  },
+    {
+    "name": "CPR Choice Workplace Bloodbourne Pathogen Training",
+    "organization": "CPR Choice",
+    "earnedDate": "2/11/26",    
+    "image": "Certifications/CPRchoice/BloodBornePathogensCourse.png",
+    "link": "ATC_AM349109679897_Fusion%20EDU%20Workshop%20-%20Milligan%20University%20Intro%20to%20Fusion.pdf"
+  },
+  {
+    "name": "Shainin Red X Apprentice",
+    "organization": "Shainin",
+    "earnedDate": "12/10/2025",
+    "image": "Certifications/ShaininRedXApprentice/Certification.png",
+    "link": "ATC_AM349109679897_Fusion%20EDU%20Workshop%20-%20Milligan%20University%20Intro%20to%20Fusion.pdf"
+  },
+  {
+    "name": "APIS IQ Software PFMEA (Process)",
+    "organization": "APIS North America, LLC",
+    "earnedDate": "9/26/25",
+    "image": "Certifications/APIS/directory.png",
+    "link": "ATC_AM349109679897_Fusion%20EDU%20Workshop%20-%20Milligan%20University%20Intro%20to%20Fusion.pdf"
+  },
+  {
+    "name": "Fundamentals of Engineering Exam - Passed",
+    "organization": "NCEES",
+    "earnedDate": "05/30/2025",
+    "image": "Certifications/FEexam/fe-exam.png",
+    "link": "https://www.credly.com/badges/dfb1a83d-9aec-4531-8f64-c399ed70b238/public_url"
+  },
+  {
+    "name": "Red Cross Lifeguarding",
+    "organization": "American Red Cross",
+    "earnedDate": "12/29/2022",
+    "image": "Certifications/Lifeguarding/LifeguardingCertification.png",
+    "link": "https://www.redcross.org/take-a-class/qrcode?certnumber=013CU3D&selectedCerts=id-013CU3D%2C&size=wallet"
+  },
+  {
+    "name": "Fusion 360 Workshop",
+    "organization": "Milligan University / Autodesk Workshop",
+    "earnedDate": "01/12/2022",
+    "image": "Certifications/Fusion360Training/Certification.png",
+    "link": "Fusion360Training/ATC_AM349109679897_FusionEDUworkshop-MilliganUniversityIntroToFusion.pdf"
+  },
+  {
+    "name": "MATLAB Onramp Training",
+    "organization": "MathWorks",
+    "earnedDate": "08/26/2020",
+    "image": "Certifications/MatlabOnrampTraining/Certificate.png",
+    "link": "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=ff886110-3afd-491e-8397-050ef6de3b6b"
+  },
+  {
+    "name": "Red Cross Water Safety Instructor",
+    "organization": "American Red Cross",
+    "earnedDate": "02/21/2018",
+    "image": "Certifications/WaterSafetyInstructor/WaterSafetyInstructorCertification.png",
+    "link": "https://www.redcross.org/take-a-class/qrcode?certnumber=119H96"
+  }
+]

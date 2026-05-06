@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+
+  
+
+    <style>
+        #canvas {border:1px solid black;width: 900px;height:700px;}
+    </style>
+    <body>
+        <canvas id='canvas'></canvas>
+    <script src = "http://localhost/HenryDavidHolbenJournalAndNotebook/.UniversalFooterContent.js"></script>
+
+  </body>
+        <script>
+            var Aspose3D = {
+                locateFile : function(path, prefix) {
+                    return 'https://products.aspose.app/3d/assets/js/' + path;
+                }
+            };
+        <script>
+
+                aspose3d({
+                    canvas : 'canvas',
+                    movement : 'orbital',
+                    centerModel : true,
+                    features : ['grid', 'menu', 'summary', 'orientationBox', ],
+                    camera:
+                    {
+                        far: 1000,
+                        near: 1,
+                        up: 'y',
+                        lookAt : [0, 0, 0],
+                        position : [10, 10, 10],
+                        fov : 45
+                    },
+                    url: 'scene.a3dw'
+                });
+            </script>
+</html>

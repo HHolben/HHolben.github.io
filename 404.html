@@ -5,45 +5,39 @@
 <!--
 	This is the root index page for my website, hholben.github.io
 	Author: Henry Holben
-	Last Update to Website: 25 May 2020
+	Last Update to Website: 5 May 2026
 
 
 -->
 
+<meta charset="utf-8">
 
+  <!-- Main styles -->
+  <link href="HomePageStyles.css" rel="stylesheet" type="text/css">
 
-<head>
-	<!--
-	This is the Head element, it is where the metadata for the website goes
-	-->
-	<title>hholben home page</title>
-	<meta charset="utf-8"/>
-	<link href="HomePageStyles.css" rel="stylesheet" type="text/css"/>
-	<link href="HHWebsiteNavStyles.css" rel="stylesheet" type="text/css"/>
-
+  <link href="Navbar/NavbarStyles.css" rel="stylesheet" type="text/css">
+  <link href="footerStyles.css" rel="stylesheet" type="text/css">
+  <style>
+    body{
+      background-image: none
+    }
+  </style>
 </head>
 
+<body>
 
-<header>
+  <!-- Navbar container -->
+  <div id="navbar"></div>
 
-	<nav id="HomePageTop">
+  <!-- Declare nesting level -->
+  <script>
+    const NestIndex = 0;
+  </script>
 
-		<!--This is the nav element, this is where we create our navigation bar-->
-
-
-		<ul>
-			<li><a href="index.html">About Me </a></li>
-			<li><a href="WebsiteProjects.html">Projects</a></li>
-			<li><a href="Résumé.html">My Résumé</a></li>
-			<li><a href="ContactPage.html">Contact Me</a> </li>
-			
-			
-		</ul>
-	</nav>
-	
+  <!-- Load navbar -->
+  <script src="Navbar/NavbarLoading.js" defer></script>
 
 
-</header>
 
 
 <body>
@@ -59,14 +53,32 @@ Whoopsie! The page you're looking for doesn't exist.
 
 Click <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">here</a> if you give up.
 
+<br>
+<br>
+<br>
+<div class="row">
+
+
+	Don't push the big red button. <button onclick="SelfDestructSequence()">Self Destruct</button>
+		<script>
+			function SelfDestructSequence()
+			{
+
+				location.replace("404.html")
+
+			}
+		</script>
+    </div>
+
 
 </p>
-</body>
+<script src = "http://localhost/HenryDavidHolbenJournalAndNotebook/.UniversalFooterContent.js"></script>
 
-<footer>
+  </body>
 
-    <p>Copyright 2020 Henry Holben.</p>
-</footer>
+  <footer>
+    Copyright 2026 Henry Holben.
+  </footer>
 
 
 </html>

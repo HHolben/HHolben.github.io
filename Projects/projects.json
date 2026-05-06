@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Cliff Hanger",
+    "href": "ProjectCliffHanger/ProjectCliffHanger_Project_Page.html",
+    "image": "ProjectCliffHanger/ProjectCliffHangerThumbnail.jpg",
+    "alt": "Picture of me jumping off a rock ledge. There are trees in the background.",
+    "description": "Short Film"
+  },
+  {
+    "title": "Building a Trebuchet",
+    "href": "ProjectTrebuchet/ProjectTrebuchetPage.html",
+    "image": "ProjectTrebuchet/ProjectTrebuchetThumbnailV2.jpg",
+    "alt": "Me pulling down the arm of a trebuchet with a rope.",
+    "description": "Siege Engine"
+  },
+  {
+    "title": "Swimming Lessons",
+    "href": "ProjectSwimmingLessons/ProjectSwimmingLessonsPage.html",
+    "image": "ProjectSwimmingLessons/directory.png",
+    "alt": "Icon of a diver with an icon of a swimmer",
+    "description": "This project folder is to help with swimming lessons I teach."
+  },
+  {
+    "title": "Time's Madness",
+    "href": "https://www.amazon.com/Times-Madness-One-Anthology-Creative-ebook/dp/B08TW8HVSJ/ref=sr_1_1?sr=8-1",
+    "image": "ProjectTimesMadness/ProjectTime'sMadness_Thumbnail_V2.png",
+    "alt": "Picture of Father Time Devouring a bending clock.",
+    "description": "A portfolio of creative writing including poems and short stories."
+  },
+  {
+    "title": "IoT Gardening Project",
+    "href": "ProjectIoTGarden/ProjectIotGardenHub.html",
+    "image": "ProjectIoTGarden/ProjectIoTGarden_Thumbnail.png",
+    "alt": "A plant, there are icons of a clock, a thermometer, the sun, and a cloud sprinkling rain to the left, networking and database icons above, and icons of devices and a shower to the right.",
+    "description": "A electronics/gardening project I am starting"
+  },
+  {
+    "title": "Remedial Logic",
+    "href": "ProjectRemedialLogic/ProjectRemedialLogicPage.html",
+    "image": "ProjectRemedialLogic/ProjectRemedialLogicThumbnail.PNG",
+    "alt": "A professor standing at the front of a classroom with students seated at desks",
+    "description": "Short Film"
+  },
+  {
+    "title": "Rocket-Tree",
+    "href": "ProjectRocketTree/ProjectRocketTreePage.html",
+    "image": "ProjectRocketTree/ProjectRocketTreeThumbnail.png",
+    "alt": "A digital lego pine tree attatched to a cone with a flame piece agaisnt a black background",
+    "description": "Festivities"
+  },
+  {
+    "title": "Milligan Robotics",
+    "href": "https://milligan-mate-rov-2020.github.io/",
+    "image": "ProjectMilliganRobotics/ProjectMilliganRoboticsThumbnail.png",
+    "alt": "A picture of the frame of a ROV with its thrusters and tether, photo by Henry Holben",
+    "description": "Robotics Team"
+  },
+  {
+    "title": "Milligan Low Voltage Disconnect",
+    "href": "https://github.com/HHolben/TheMilliganLowVoltageDisconnect",
+    "image": "LogoTransparentBackground30November2023.png",
+    "alt": "Image of a solid cell battery with muscular arms sitting in a life preserver",
+    "description": "Milligan 2024 Capstone Design Project"
+  },
+  {
+    "title": "Nodevision",
+    "href": "https://github.com/HHolben/Nodevision",
+    "image": "ProjectNodevision/Favicon.png",
+    "alt": "Pixel art of a node surrounded by colored edges pointing outward",
+    "description": "Software Development Project"
+  }
+]

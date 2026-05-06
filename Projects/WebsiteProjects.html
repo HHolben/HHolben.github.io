@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>hholben website projects page</title>
+  <meta charset="utf-8"/>
+  <link href="ProjectPageStyles.css" rel="stylesheet" type="text/css"/>
+  <link href="../Navbar/NavbarStyles.css" rel="stylesheet" type="text/css">
+  <link href="../footerStyles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+
+
+  
+  <div id="navbar">
+
+
+
+<script>
+  const NestIndex = 1;
+</script>
+<script src="../Navbar/NavbarLoading.js"></script>
+
+
+    
+  </div>
+
+
+<header>
+
+</header>
+
+<div class="TopOfPage">
+  <h1>Projects</h1>
+  <p>
+    Welcome to the party. This is a portfolio of some of the projects I have worked on.
+  </p>
+</div>
+
+
+<div class="PlusCanvas">
+  <canvas id="myCanvas" width="2000" height="5000" style="border:1px solid rgba(0, 0, 0, 0.288);"></canvas>
+  <div id="project-links" class="ProjectLinks"></div>
+
+</div>
+
+
+
+
+<script src="ProjectPageScript.js"></script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+  const container = document.getElementById("project-links");
+
+  if (!container) {
+    console.error("Project container not found.");
+    return;
+  }
+
+  function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  }
+
+function getCardsPerRow() {
+  const containerWidth = container.clientWidth;
+  const cardWidth = 370 + 20; // card width + padding buffer
+  const calculatedCardsPerRow = Math.floor(containerWidth / cardWidth);
+
+  return Math.max(1, Math.min(5, calculatedCardsPerRow));
+}
+
+  try {
+    const response = await fetch("projects.json");
+
+    if (!response.ok) {
+      throw new Error(`Failed to load projects.json: ${response.status}`);
+    }
+
+    const projects = shuffleArray(await response.json());
+
+    function render() {
+      container.innerHTML = "";
+
+      const cardsPerRow = getCardsPerRow();
+
+      for (let i = 0; i < projects.length; i += cardsPerRow) {
+        const rowProjects = projects.slice(i, i + cardsPerRow);
+
+        const row = document.createElement("div");
+        row.className = "row";
+
+        rowProjects.forEach((project) => {
+          const column = document.createElement("div");
+          column.className = "column";
+
+  
+          const link = document.createElement("a");
+link.href = project.href;
+link.target = "_blank";
+link.rel = "noopener noreferrer";
+
+
+
+
+
+          const card = document.createElement("div");
+          card.className = "card";
+
+          const heading = document.createElement("h2");
+          heading.textContent = project.title;
+
+          const image = document.createElement("img");
+          image.src = project.image;
+          image.alt = project.alt || project.title;
+
+          const description = document.createElement("p");
+          description.textContent = project.description || "";
+
+          card.appendChild(heading);
+          card.appendChild(image);
+          card.appendChild(description);
+
+          link.appendChild(card);
+          column.appendChild(link);
+          row.appendChild(column);
+        });
+
+        container.appendChild(row);
+      }
+    }
+
+    render();
+
+    // Reflow on resize
+    window.addEventListener("resize", () => {
+      render();
+    });
+
+  } catch (error) {
+    console.error("Error loading project cards:", error);
+    container.innerHTML = "<p>Unable to load projects at this time.</p>";
+  }
+});
+</script>
+
+
+<footer>
+  <div id="dynamicLinksContainer"></div>
+  Copyright 2026 by Henry Holben
+</footer>
+
+</body>
+</html>

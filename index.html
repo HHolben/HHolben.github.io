@@ -1,137 +1,77 @@
-<!doctype html lang="en">
-<html><!--
-	This is the root index page for my website, hholben.github.io
-	Author: Henry Holben
-	Last Update to Website: 5 January 2021
+<!doctype html>
+<html lang="en">
+<head>
+  <!--
+  Root index page for hholben.github.io
+  -->
 
+  <title>hholben home page</title>
+  <meta charset="utf-8">
 
---><head>
-	<!--
-	This is the Head element, it is where the metadata for the website goes
-	-->
-	<title>hholben home page</title>
-	<meta charset="utf-8">
-	<link href="HomePageStyles.css" rel="stylesheet" type="text/css">
-	<link href="HHWebsiteNavStyles.css" rel="stylesheet" type="text/css">
-	
-	
-
+  <!-- Main styles -->
+  <link href="HomePageStyles.css" rel="stylesheet" type="text/css">
+  <link href="Navbar/NavbarStyles.css" rel="stylesheet" type="text/css">
+  <link href="footerStyles.css" rel="stylesheet" type="text/css">
 </head>
 
-
 <body>
-	<header>
 
-	<nav id="HomePageTop">
+  <!-- Navbar container -->
+  <div id="navbar"></div>
 
-		<!--This is the nav element, this is where we create our navigation bar-->
+  <!-- Declare nesting level -->
+  <script>
+    const NestIndex = 0;
+  </script>
 
+  <!-- Load navbar -->
+  <script src="Navbar/NavbarLoading.js" defer></script>
 
-		<ul>
-			<li><a href="index.html">About Me </a></li>
-			<li><a href="WebsiteProjects.html">Projects</a></li>
-			<li><a href="Résumé.html">My Résumé</a></li>
-			<li><a href="ContactPage.html">Contact Me</a> </li>
-			
-			
-		</ul>
-	</nav>
-	
+  <!-- Main content -->
+  <div class="row">
 
+    <div class="column">
+      <h1>About Me</h1>
 
-</header>
+      <article>
+        <div class="paragraph1">
+          Hello, World! Welcome to my website. My name is Henry Holben, I like to make things and write stuff. I work as a quality engineer for <a href ="https://www.sl-america.com/locations/us-locations/tennessee/">SL Tennessee</a>, an automotive components supplier.
+        </div>
+        <br>
+        <div class="paragraph1">
+          I was born and raised in 
+          <a href="https://www.johnsoncitytn.org/" target="_blank">Johnson City, Tennessee</a>, 
+          baptized at 
+          <a href="https://www.fcc-jc.org/" target="_blank">First Christian Church in Johnson City</a>, 
+          and instilled with common sense at 
+          <a href="https://www.providenceacademy.com/" target="_blank">Providence Academy</a> (they gave it their best shot).
+        </div>
+        <br>
+        <div class="paragraph1">
+          In 2024, I graduated from 
+          <a href="https://www.milligan.edu/" target="_blank">Milligan University</a> 
+          with a bachelor's of science degree in electrical engineering with minors in humanities, mathematics, and journalism.
+        </div>
+                <br>
 
+        <div class="paragraph1">          My life goals include designing a board game and participating in a Welsh bog-snorkeling contest. 
+          I write science fiction; I occasionally play a cello, and I really, really like airplanes.
+        </div>
+      </article>
+    </div>
 
+    <div class="column">
+      <div class="PhotoOfMe">
+        <img src="PhotoOfMe3May2026.jpg" alt="Photo of me standing on the edge of a road by a grassy lawn with mountains in the background.">
+      </div>
+    </div>
 
+  </div>
 
-	
+  <!-- Footer -->
+  <footer>
+    Copyright 2026 Henry Holben.
+  </footer>
 
-	<div class="row">
-
-		<div class="column">
-	  
-		
-				<h1>About Me</h1>
-			
-			
-			<!--Biographical info-->
-			<article>
-			<p>
-				</p><div class="paragraph1">
-				Hello World! Welcome to my website. My name is Henry Holben, I like to make things and write stuff. I am currently pursing an electrical engineering degree with a multimedia journalism minor at <a href="https://www.milligan.edu/">Milligan <s>College</s> University</a>. 
-			</div><!--paragraph1-->
-	  
-			<br>
-			<br>
-			<div class="paragraph1">
-			 I was born and raised in <a href="https://www.johnsoncitytn.org/">Johnson City, Tennessee</a>, baptized at <a href="https://www.fcc-jc.org/">First Christian Church in Johnson City</a>, and instilled with common sense at <a href="https://www.providenceacademy.com/">Providence Academy</a> (they gave it their best shot). My life goals include designing a board game and participating in a Welsh bog-snorkeling contest. I write science fiction; I occasionally play a cello, and I really, really like airplanes. 
-			</div><!--paragraph1-->
-	  
-
-
-
-			
-
-
-			
-			</article>
-	
-	  
-		</div> <!--Column-->
-	  
-	
-
-
-
-		<div class="column">
-			<!--<div class="card">-->
-
-				
-				<div class="PhotoOfMe">
-		
-					<img src="IMG_5235.jpg" alt="Photo of me standing on a bridge over a creek in front of a brick house.">
-		
-				</div><!--photo-->
-
-	
-		</div><!--Column-->
-	  
-	  
-  
-	</div><!--Row-->
-	  
-	
-	<div class="row">
-
-
-	Don't push the button. <button onclick="SelfDestructSequence()">Self Destruct</button>
-		<script>
-			function SelfDestructSequence()
-			{
-
-				location.replace("404.html")
-
-			}
-		</script>
-    </div><!--Row-->
-
-
-
-
-<footer>
-
-
-	
-
-
-    Copyright 2021 <a href="http://holbenh.epizy.com/CarpeDiem.php">Henry Holben.</a>
-
-
-				
-				
-</footer>
-
-
-
-
-</body></html>
+</body>
+</html>
