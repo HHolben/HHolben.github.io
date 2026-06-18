@@ -1,323 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+      Henry David Holben Resume
+    </title>
+<style>
+      :root {
+      --ink: #1f2933;
+      --muted: #5f6b7a;
+      --rule: #d9e2ec;
+      --panel: #355a40;
+      --panel-accent: #bcccdc;
+      --page: #ffffff;
+      --soft: #f5f7fa;
+      --link: #0b63ce;
+      }
+      * {
+      box-sizing: border-box;
+      }
+      html {
+      background: #e9eef5;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.45;
+      }
+      body {
+      margin: 0;
+      padding: 32px;
+      }
+      .resume-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--page);
+      box-shadow: 0 10px 35px rgba(15, 23, 42, 0.12);
+      }
+      header {
+      padding: 34px 42px 28px;
+      border-bottom: 1px solid var(--rule);
+      text-align: center;
+      }
+      header .document-title {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      }
+      h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+      }
+      .content-grid {
+      display: grid;
+      grid-template-columns: minmax(240px, 30%) 1fr;
+      min-height: 900px;
+      }
+      aside {
+      background: var(--panel);
+      color: #ffffff;
+      padding: 32px 28px;
+      }
+      aside a {
+      color: #dbeafe;
+      overflow-wrap: anywhere;
+      }
+      main {
+      padding: 32px 42px 42px;
+      }
+      section + section {
+      margin-top: 34px;
+      }
+      .sidebar-section + .sidebar-section {
+      margin-top: 30px;
+      }
+      h2,
+      h3,
+      h4,
+      p,
+      ul {
+      margin-top: 0;
+      }
+      h2 {
+      margin-bottom: 18px;
+      padding-bottom: 7px;
+      border-bottom: 2px solid var(--rule);
+      color: var(--ink);
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      }
+      aside h2 {
+      border-bottom-color: rgba(255, 255, 255, 0.28);
+      color: #ffffff;
+      }
+      h3 {
+      margin-bottom: 4px;
+      font-size: 1.05rem;
+      line-height: 1.25;
+      }
+      h4 {
+      margin-bottom: 6px;
+      color: var(--panel-accent);
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
+      }
+      .entry {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--rule);
+      }
+      .entry:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+      }
+      .entry-title {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 7px;
+      }
+      .entry-title h3 {
+      margin: 0;
+      }
+      .date {
+      color: var(--muted);
+      font-weight: 700;
+      white-space: nowrap;
+      }
+      .education-block .date {
+      display: block;
+      margin-top: 3px;
+      }
+      p {
+      margin-bottom: 10px;
+      }
+      .contact-line,
+      .skill-list {
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      }
+      .contact-label {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--panel-accent);
+      font-weight: 700;
+      }
+      ul {
+      padding-left: 1.15rem;
+      margin-bottom: 22px;
+      }
+      li {
+      margin-bottom: 4px;
+      }
+      .sidebar-section ul {
+      margin-bottom: 18px;
+      }
+      .project-note {
+      padding: 14px 16px;
+      background: var(--soft);
+      border-left: 4px solid var(--panel);
+      }
+      .interest-year {
+      color: var(--muted);
+      font-weight: 700;
+      }
+      @media print {
+      html,
+      body {
+      background: #ffffff;
+      }
+      body {
+      padding: 0;
+      }
+      .resume-page {
+      max-width: none;
+      box-shadow: none;
+      }
+      a {
+      color: inherit;
+      }
+      }
+      @media (max-width: 760px) {
+      body {
+      padding: 0;
+      }
+      .content-grid {
+      grid-template-columns: 1fr;
+      }
+      header,
+      main,
+      aside {
+      padding-left: 24px;
+      padding-right: 24px;
+      }
+      }
+    </style>
+</head>
+<body>
+<article class="resume-page"><header><p class="document-title">
+          Résumé
+        </p><h1>
+          Henry David Holben
+        </h1></header><div class="content-grid"><aside><section class="sidebar-section" aria-labelledby="contact-heading"><h2 id="contact-heading">
+              Contact
+            </h2><p class="contact-line"><span class="contact-label">
+                E-mail
+              </span></p><p class="contact-line"><span class="contact-label">
+                Website
+              </span><a href="https://hholben.github.io">
+                https://hholben.github.io
+              </a></p><p class="contact-line"><span class="contact-label">
+                LinkedIn
+              </span><a href="https://www.linkedin.com/in/henry-holben-14529b161" data-nv-link-type="external" target="_blank" rel="noopener noreferrer">
+                www.linkedin.com/in/henry-holben-14529b161
+              </a></p></section><section class="sidebar-section" aria-labelledby="skills-heading"><h2 id="skills-heading">
+              Skills and Tools
+            </h2><h4>
+              Electronics
+            </h4><ul><li>
+                Soldering
+              </li><li>
+                Arduino
+              </li><li>
+                Oscilloscope
+              </li><li>
+                KiCad
+              </li><li>
+                PSPICE
+              </li></ul><h4>
+              Programming
+            </h4><ul><li>
+                Web Coding (HTML, Javascript, CSS)
+              </li><li>
+                NodeJS
+              </li><li>
+                PHP
+              </li><li>
+                C++
+              </li><li>
+                SQL
+              </li><li>
+                PLC Ladder Logic
+              </li><li>
+                Octave / MATLAB
+              </li></ul><h4>
+              Engineering
+            </h4><ul><li>
+                Root Cause Analysis
+              </li><li>
+                Fusion 360
+              </li></ul><h4>
+              Computer Skills
+            </h4><ul><li>
+                Linux
+              </li><li>
+                LibreOffice
+              </li><li>
+                Microsoft Office
+              </li><li>
+                Blender
+              </li></ul></section></aside><main><section aria-labelledby="education-heading"><h2 id="education-heading">
+              Education
+            </h2><div class="entry education-block">
 
-<h2>Résumé</h2>
-<font color="#478a09">
-<font face="Arial, serif">
-<font size="5" style="font-size: 20pt">
-<b>Henry David Holben</b>
-</font>
-</font>
-</font>
-<p></p>
-<p align="center" style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Times New Roman, serif">
-<font size="3" style="font-size: 12pt">E-mail:</font>
-</font>
-</font>
-<font color="#0066ff">
-<font face="Times New Roman, serif">
-<font size="3" style="font-size: 12pt">
-<u> </u><!--Put Email Here!!!-->
-</font>
-</font>
-</font>
-</p>
-<p align="center" style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Times New Roman, serif">
-<font size="3" style="font-size: 12pt">Website:</font>
-</font>
-</font>
-<font color="#0563c1">
-<u>
-<a href="https://hholben.github.io">https://hholben.github.io</a>
-</u>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font size="4" style="font-size: 16pt">
-<font color="#000000">
-<font face="Arial, serif">
-<u><b>Education</b></u>
-</font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; text-indent: 0.5in; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; text-indent: 0.5in; margin-bottom: 0in">
-<b style="font-family: Arial, serif; font-size: 21.3333px; text-indent: 0px;">
-            Bachelor's of Science in Electrical Engineering: April 2024
-          </b>
-</p>
-<p style="line-height: 100%; text-indent: 0.5in; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">Milligan University, Johnson City, TN,</font>
-</font>
-</p>
-<p style="line-height: 100%; text-indent: 0.5in; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; text-indent: 0.5in; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font size="4" style="font-size: 16pt">
-<font color="#000000">
-<font face="Arial, serif">
-<u><b>Experience</b></u>
-</font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
-<p style="line-height: 16px; margin-bottom: 0in; background-color: rgb(250, 250, 250);">
-<b style="font-family: Arial, serif; font-size: 21.3333px;">SL Tennessee </b>
-<font face="Arial, serif">
-<span style="font-size: 21.3333px;">
-<b>Quality Engineering Department: 2024 - 2026</b>
-</span>
-</font>
-</p>
-<p style="line-height: 16px; margin-bottom: 0in; background-color: rgb(250, 250, 250);">
-<font face="Arial, serif">
-<span style="font-size: 21.3333px;"><b><span style="white-space:pre"></span></b></span>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<span style="white-space:pre"></span>
-          Was hired to work in a quality control department at SL Tennessee, a supplier of automotive components. 
-        </p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
-<p style="line-height: 16px; margin-bottom: 0in; background-color: rgb(250, 250, 250);">
-<font face="Arial, serif">
-<span style="font-size: 21.3333px;">
-<b>Shainin Red X Project: 2024 - 2025</b>
-</span>
-</font>
-</p>
-<p>Certification Number: TMH-495-251204</p>
-<div><br/></div>
-<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; margin-bottom: 0in; text-decoration: none">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt">
-<b>Capstone Engineering Design project: 2023 – 2024</b>
-</font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in; text-decoration: none"><br/></p>
-<p style="line-height: 100%; margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0in">
-          Currently participating on a Low Voltage Disconnect (LVD) design team
-          for a capstone engineering design course. Led development of an HTML
-          form that generates LVD software according to customer specifications.
-        </p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt">
-<b>Milligan University Robotics Team 2020 - 2023</b>
-</font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-              Joined the fledgling robotics team shortly after its creation. Oversaw the design of the
-              electronics system of a remote operated vehicle (ROV). Learned how to
-              control the ROVs thrusters using PWM. Wrote some test code in Python, and started the team’s website.
-            </font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000"><font face="Arial, serif"></font></font>
-</p>
-<p style="line-height: 100%; margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0in">
-<font color="#000000"><font face="Arial, serif">Served</font></font>
-<font color="#000000"><font face="Arial, serif"> as CEO of the robotics team</font></font>
-<font color="#000000"><font face="Arial, serif"> from Fall of 2021 to fall of 2023</font></font>
-<font color="#000000"><font face="Arial, serif">. </font></font>
-<font color="#000000" style="text-indent: 0.5in; background-color: transparent;"><font face="Arial, serif">Work</font></font>
-<font color="#000000" style="text-indent: 0.5in; background-color: transparent;"><font face="Arial, serif">ed</font></font>
-<font color="#000000" style="text-indent: 0.5in; background-color: transparent;"><font face="Arial, serif"> with students, faculty, and alumni on robotics-</font></font>
-<font color="#000000" style="text-indent: 0.5in; background-color: transparent;"><font face="Arial, serif">related</font></font>
-<font color="#000000" style="text-indent: 0.5in; background-color: transparent;"><font face="Arial, serif"> projects. </font></font>
-<font color="#000000" style="background-color: transparent; text-indent: 0.5in;"><font face="Arial, serif">A</font></font>
-<span style="background-color: transparent; text-indent: 0.5in; font-family: Arial, serif;">
-            ssisted in the development of CAD models and used 3D printers to fabricate parts.
-          </span>
-<font color="#000000" style="background-color: transparent; text-indent: 0.5in;">
-<font face="Arial, serif">        </font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt">
-<b>Math Tutor 2023 – 2024</b>
-</font>
-</font>
-</font>
-</p>
-<p style="text-indent: 0px; line-height: 100%; margin-bottom: 0in;">
-<span style="background-color: transparent; text-indent: 0.5in;">
-<span style="white-space: pre;"></span>
-            After tutoring a classmate in a Discrete Math class, was granted a work-study position as a tutor.
-          </span>
-</p>
-<p style="line-height: 100%; margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt">
-<b>Go Baby Go Appalachia Milligan College, June and October 2017</b>
-</font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-              Worked with other engineering students, members of the community, and engineering
-              professors to modify ridable toy cars to be driven by children with
-              disabilities that would have otherwise made driving those cars impossible.
-            </font>
-</font>
-</p>
-<p style="line-height: 100%; margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt"><b>Lifeguarding:</b></font>
-</font>
-</font>
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt"><b> Camp A.C.C 2014, Martindale Pool 2015 - 2023</b></font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-left: 0.5in; text-indent: 0.5in; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-              Former Red Cross Certified Lifeguard: Was trained in First Aid, CPR and AED.
-            </font>
-</font>
-</p>
-<p style="line-height: 100%; margin-left: 0.5in; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-              Developed ability to enforce rules and policy as a lifeguard. Assisted with
-              weekends at Camp ACC in the Summer of 2014. Worked at Martindale pool
-              in the summers of 2015 – 2020. Trained additional lifeguards to work at Martindale.
-            </font>
-</font>
-</p>
-<p style="line-height: 100%; margin-left: 0.5in; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt"><b>Swim Instructor</b></font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt"><b>Martindale Pool</b></font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt"><b>2018 - 2023</b></font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-left: 0.5in; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-              Was trained and certified in the Red Cross Water Safety Instructor course.
-            </font>
-</font>
-</p>
-<p style="line-height: 100%; margin-left: 0.5in; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">Taught basic swimming skills at Martindale Pool.</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt"><b>First Christian Church V.B.S / Kids Day Camp</b></font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt"><b>Volunteer</b></font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt"><b>Johnson City, TN</b></font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt"><b>2012 – 2023</b></font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="5" style="font-size: 18pt">
-<u><b>Interests</b></u>
-</font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0in"><br/></p>
-<p style="line-height: 100%; margin-bottom: 0in">
-<font color="#000000">
-<font face="Arial, serif">
-<font size="4" style="font-size: 16pt"><b>Creative Writing</b></font>
-</font>
-</font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0.11in">
-<span style="font-family: Arial, serif; background-color: transparent;">2021</span>
-<br/>
-</p>
-<p style="line-height: 16px; margin-bottom: 0.11in; background-color: rgb(250, 250, 250);">
-<font face="Arial, serif">
-<span style="white-space:pre"></span>
-            Self-published a collection of poetry and stories called 
-          </font>
-<font face="Arial, serif"><i>Time’s Madness Part One: Morning</i></font>
-<font face="Arial, serif"> through Kindle Direct Publishing.</font>
-</p>
-<div><font face="Arial, serif"><br/></font></div>
-<p style="line-height: 100%; margin-bottom: 0.11in">
-<span style="background-color: transparent; font-family: Arial, serif; text-indent: 0.5in;">
-            2015
-          </span>
-</p>
-<p style="line-height: 16px; margin-bottom: 0in; background-color: rgb(250, 250, 250); text-indent: 0.5in;">
-<font color="#000000">
-<font face="Arial, serif">Creative Communications Poetic Power Winner</font>
-</font>
-</p>
-<div>
-<font color="#000000"><font face="Arial, serif"><br/></font></font>
-</div>
+              <div class="entry"><div class="entry-title"><h3>
+                   Bachelor's of Science in Electrical Engineering&nbsp</h3><span class="date">
+                  April 2024
+                </span></div>
+              
+              Milligan University, Elizabethton, Tennessee,</p><p><br></p>
+              
+              
+                            <div class="entry"><div class="entry-title"><h3>
+                   Fundamentals of Engineering Exam</h3><span class="date">
+                  May 2025
+                </span></div>
+              
+              <div>Passed</div></div></section><section aria-labelledby="experience-heading"><h2 id="experience-heading">
+              Experience
+            </h2><div class="entry"><div class="entry-title"><h3>
+                  SL Tennessee</h3><span class="date">
+                  2024 - 2026
+                </span></div><p><h4>Quality Engineering Department</h4></p><p><span style="white-space:pre"></span><span style="white-space:pre">	</span>Performed root cause analysis activities in a quality control department at SL Tennessee, a supplier of automotive components. Worked with assembly line operators, injection molding operators, technicians, metrologists, and managers. Developed tools for testing components.&nbsp;
+              </p><p><span style="white-space:pre"></span><span style="white-space:pre">	</span>Addressed customer concerns and assisted with warranty analysis projects. Wrote and issued containments, standard work deviations, work revision requests, and Machine Function change documents. Assisted with APQP activities for a new product line. Submitted Part Submission Warrants (PSWs), to customers and assisted with engineering change request activities.</p><p><br></p><div><h4 style="color: rgb(188, 204, 220);">Shainin Red X Project</h4></div><div><span style="white-space:pre">	</span>Worked with coworkers to identify the root cause of an assembly line failure mode. Recieved the Shainin Red X Apprentice Certification for this project: Certification Number: TMH-495-251204</div></div><div class="entry"><div class="entry-title"><h3>
+                  Capstone Engineering Design project
+                </h3><span class="date">
+                  2023 – 2024
+                </span></div><p><span style="white-space:pre"></span>
+                Led development of an HTML form for generating an arduino-based Low Voltage Disconnect system's code according to customer specifications while working on a capstone design project.
+              </p></div><div class="entry"><div class="entry-title"><h3>
+                  Milligan University Robotics Team
+                </h3><span class="date">
+                  2020 - 2023
+                </span></div><p><span style="white-space:pre"></span>
+                Joined the fledgling robotics team shortly after its creation. Oversaw the design of the electronics system of a remote operated vehicle (ROV). Learned how to control the ROVs thrusters using PWM. Wrote test code in Python, and launched the team’s website.
+              </p><p><span style="white-space:pre"></span>
+                Served as CEO of the robotics team from Fall of 2021 to fall of 2023. Worked with students, faculty, and alumni on robotics-related projects. Assisted in the development of CAD models and used 3D printers to fabricate parts.
+              </p></div><div class="entry"><div class="entry-title"><h3>
+                  Math Tutor
+                </h3><span class="date">
+                  2023 – 2024
+                </span></div><p><span style="white-space:pre"></span>
+                After tutoring a classmate in a Discrete Math class, was granted a work-study position as a tutor.
+              </p></div><div class="entry"><div class="entry-title"><h3>
+                  Go Baby Go Appalachia Milligan College
+                </h3><span class="date">
+                  June and October 2017
+                </span></div><p><span style="white-space:pre"></span>
+                Worked with other engineering students, members of the community, and engineering professors to modify ridable toy cars to be driven by children with disabilities that would have otherwise made driving those cars impossible.
+              </p></div><div class="entry"><div class="entry-title"><h3>
+                  Lifeguarding: Camp A.C.C 2014, Martindale Pool
+                </h3><span class="date">
+                  2015 - 2023
+                </span></div><p><span style="white-space:pre"></span>
+                Former Red Cross Certified Lifeguard: Was trained in First Aid, CPR and AED.
+              </p><p><span style="white-space:pre"></span>
+                Developed ability to enforce rules and policy as a lifeguard. Assisted with weekends at Camp ACC in the Summer of 2014. Worked at Martindale pool in the summers of 2015 – 2020. Trained additional lifeguards to work at Martindale.
+              </p></div><div class="entry"><div class="entry-title"><h3>
+                  Swim Instructor
+                  <br>
+                  Martindale Pool
+                </h3><span class="date">
+                  2018 - 2023
+                </span></div><p><span style="white-space:pre"></span>
+                Was trained and certified in the Red Cross Water Safety Instructor course.
+              </p><p><span style="white-space:pre"></span>
+                Taught basic swimming skills at Martindale Pool.
+              </p></div><div class="entry"><div class="entry-title"><h3>
+                  First Christian Church V.B.S / Kids Day Camp
+                  <br>
+                  Volunteer
+                  <br>
+                  Johnson City, Tennessee
+                </h3><span class="date">
+                  2012 – 2023
+                </span></div></div></section><section aria-labelledby="interests-heading"><h2 id="interests-heading">
+              Interests
+            </h2><div class="entry"><h3>
+                Creative Writing
+              </h3><p><span class="interest-year">
+                  2021
+                </span></p><p><span style="white-space:pre"></span>
+                Self-published a collection of poetry and stories called
+                <i>
+                  Time’s Madness Part One: Morning
+                </i>
+                through Kindle Direct Publishing.
+              </p><p><span class="interest-year">
+                  2015
+                </span></p><p><span style="white-space:pre"></span>
+                Creative Communications Poetic Power Winner
+              </p></div></section></main></div></article>
+  
+</body>
+</html>       2015
+                </span></p><p><span style="white-space:pre"></span><span style="white-space:pre">	</span>Creative Communications Poetic Power Winner
+              </p></div></section></main></div></article>
+</body>
+</html>

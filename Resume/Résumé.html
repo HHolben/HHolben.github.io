@@ -115,17 +115,22 @@
     </style>
 </head>
 <body>
+
+
+
+  <!-- Navbar container -->
+  <div id="navbar"></div>
+
+  <!-- Declare nesting level -->
+  <script>
+    const NestIndex = 1;
+  </script>
+
+  <!-- Load navbar -->
+  <script src="../Navbar/NavbarLoading.js" defer></script>
+
 <header>
-<nav id="RésuméPageTop">
-<ul>
-<li><a href="https://hholben.github.io/index.html">About Me</a></li>
-<li><a href="https://hholben.github.io/Projects/WebsiteProjects.html">Projects</a></li>
-<li><a href="https://hholben.github.io/Résumé/Résumé.html">My Résumé</a></li>
-<li><a href="https://hholben.github.io/Blog/index.html">Blog</a></li>
-<li><a href="https://hholben.github.io/ContactPage/ContactPage.html">Contact Me</a></li>
-</ul>
-</nav>
-<div class="w3-bar w3-black">
+<div class="w3-bar w3-black" styles="border-radius: 25px;">
 <button class="w3-bar-item w3-button" onclick="openTab('Resume')">Résumé</button>
 <button class="w3-bar-item w3-button" onclick="openTab('CV')">CV</button>
 <button class="w3-bar-item w3-button" onclick="openTab('Certifications')">Certifications</button>
